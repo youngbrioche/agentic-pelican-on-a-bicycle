@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <defs>
+    <linearGradient id="sky02" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#8bc5f2"/>
+      <stop offset="100%" stop-color="#fef8e7"/>
+    </linearGradient>
+    <linearGradient id="ground02" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#9fce76"/>
+      <stop offset="100%" stop-color="#6ea860"/>
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="0.2" cy="0.2" r="0.6">
+      <stop offset="0%" stop-color="#fff3b0" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ffe066" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="pelicanBody02" x1="0.3" x2="0.7" y1="0" y2="1">
+      <stop offset="0%" stop-color="#fefdf9"/>
+      <stop offset="100%" stop-color="#d9d2c7"/>
+    </linearGradient>
+    <radialGradient id="wheel02" cx="0.5" cy="0.5" r="0.9">
+      <stop offset="0%" stop-color="#f2f2f2"/>
+      <stop offset="100%" stop-color="#2a2a2a"/>
+    </radialGradient>
+    <style>
+      .outline { stroke: #2d2d2d; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+      .bike { stroke: #1f4f75; stroke-width: 12; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .tire { fill: url(#wheel02); stroke: #1a1a1a; stroke-width: 6; }
+      .feather { fill: url(#pelicanBody02); stroke: #bdb6ad; stroke-width: 3; }
+      .orange { fill: #f4a261; }
+      .shadow { fill: #6f7f60; opacity: 0.35; }
+      .highlight { fill: #ffffff; opacity: 0.5; }
+    </style>
+  </defs>
+  <rect width="800" height="800" fill="url(#sky02)"/>
+  <circle cx="120" cy="140" r="140" fill="url(#sunGlow)" opacity="0.7"/>
+  <path d="M0 600 Q160 560 320 600 T640 620 T800 600 V800 H0 Z" fill="url(#ground02)"/>
+  <ellipse cx="220" cy="630" rx="120" ry="30" class="shadow"/>
+  <ellipse cx="520" cy="650" rx="150" ry="36" class="shadow"/>
+  <g transform="translate(90 160)">
+    <g transform="translate(90 140)">
+      <circle class="tire" cx="170" cy="330" r="120"/>
+      <circle class="tire" cx="470" cy="330" r="120"/>
+      <path class="bike" d="M170 330 L310 210 L470 330 L310 330 Z"/>
+      <path class="bike" d="M310 330 L310 210 L420 120"/>
+      <path class="bike" d="M420 120 L500 130"/>
+      <path class="bike" d="M470 330 L560 240"/>
+      <path d="M150 330 H240" stroke="#2d2d2d" stroke-width="18" stroke-linecap="round"/>
+      <path d="M450 330 H540" stroke="#2d2d2d" stroke-width="18" stroke-linecap="round"/>
+      <rect x="295" y="330" width="30" height="90" rx="12" fill="#2d2d2d"/>
+      <circle cx="425" cy="120" r="18" fill="#1f4f75"/>
+      <rect x="490" y="120" width="100" height="22" rx="11" fill="#2d2d2d" transform="rotate(6 540 131)"/>
+      <path d="M170 330 L130 240" stroke="#2d2d2d" stroke-width="10" stroke-linecap="round"/>
+      <path d="M470 330 L520 260" stroke="#2d2d2d" stroke-width="10" stroke-linecap="round"/>
+      <circle cx="310" cy="330" r="20" fill="#444"/>
+    </g>
+    <g transform="translate(180 10)">
+      <ellipse class="feather" cx="250" cy="220" rx="170" ry="120"/>
+      <ellipse class="feather" cx="160" cy="260" rx="90" ry="70" transform="rotate(-22 160 260)"/>
+      <ellipse class="feather" cx="340" cy="260" rx="90" ry="70" transform="rotate(22 340 260)"/>
+      <path class="feather" d="M230 120 Q260 60 320 70 Q370 84 390 150 Q340 140 310 190 Q280 240 250 210 Q220 180 210 140 Z"/>
+      <path d="M210 200 Q210 260 160 300 Q190 320 230 300 Z" fill="#e0d9cf"/>
+      <path class="orange" d="M360 180 Q440 150 480 180 Q490 230 420 240 Q360 236 340 210 Z"/>
+      <path class="orange" d="M470 200 Q540 220 530 250 Q500 290 440 260 Z"/>
+      <circle cx="360" cy="160" r="20" fill="#2d2d2d"/>
+      <circle cx="364" cy="158" r="8" class="highlight"/>
+      <path fill="#fbd78b" stroke="#f4a261" stroke-width="4" d="M250 360 Q310 390 370 390 Q430 390 470 360 Q480 400 450 430 Q400 470 330 460 Q260 450 230 400 Q220 380 250 360 Z"/>
+      <path fill="#fefdf9" stroke="#cbc5b6" stroke-width="4" d="M210 340 Q240 440 220 500 Q200 540 160 540 Q120 540 100 510 Q80 480 90 450 Q110 400 160 350 Z"/>
+      <path fill="#fefdf9" stroke="#cbc5b6" stroke-width="4" d="M430 340 Q470 410 530 430 Q560 440 590 420 Q610 390 580 360 Q550 330 490 320 Z"/>
+      <path d="M150 350 Q140 390 160 420 Q190 460 240 440" stroke="#2d2d2d" stroke-width="12" stroke-linecap="round"/>
+      <path d="M470 350 Q490 410 450 440" stroke="#2d2d2d" stroke-width="12" stroke-linecap="round"/>
+      <path d="M320 90 Q280 20 320 10 Q360 4 400 40 Q410 70 380 90 Z" fill="#fefdf9" stroke="#cbc5b6" stroke-width="4"/>
+      <circle cx="330" cy="70" r="10" fill="#2d2d2d"/>
+    </g>
+  </g>
+  <g fill="#fefefc" opacity="0.85">
+    <ellipse cx="540" cy="180" rx="80" ry="28"/>
+    <ellipse cx="620" cy="220" rx="60" ry="20"/>
+  </g>
+  <ellipse cx="400" cy="700" rx="260" ry="36" class="shadow" opacity="0.25"/>
+</svg>

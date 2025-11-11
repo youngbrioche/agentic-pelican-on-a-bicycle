@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- Sky background -->
+  <rect width="800" height="600" fill="#87CEEB"/>
+
+  <!-- Ground -->
+  <rect y="450" width="800" height="150" fill="#90EE90"/>
+
+  <!-- Bicycle -->
+  <g id="bicycle" transform="translate(300, 350)">
+    <!-- Back wheel -->
+    <circle cx="0" cy="0" r="50" fill="none" stroke="#333" stroke-width="4"/>
+    <circle cx="0" cy="0" r="3" fill="#333"/>
+    <!-- Spokes -->
+    <line x1="0" y1="0" x2="0" y2="-50" stroke="#333" stroke-width="1"/>
+    <line x1="0" y1="0" x2="35" y2="-35" stroke="#333" stroke-width="1"/>
+    <line x1="0" y1="0" x2="50" y2="0" stroke="#333" stroke-width="1"/>
+    <line x1="0" y1="0" x2="35" y2="35" stroke="#333" stroke-width="1"/>
+
+    <!-- Front wheel -->
+    <circle cx="200" cy="0" r="50" fill="none" stroke="#333" stroke-width="4"/>
+    <circle cx="200" cy="0" r="3" fill="#333"/>
+    <!-- Spokes -->
+    <line x1="200" y1="0" x2="200" y2="-50" stroke="#333" stroke-width="1"/>
+    <line x1="200" y1="0" x2="235" y2="-35" stroke="#333" stroke-width="1"/>
+    <line x1="200" y1="0" x2="250" y2="0" stroke="#333" stroke-width="1"/>
+    <line x1="200" y1="0" x2="235" y2="35" stroke="#333" stroke-width="1"/>
+
+    <!-- Frame -->
+    <line x1="0" y1="0" x2="80" y2="-80" stroke="#FF6347" stroke-width="5"/>
+    <line x1="80" y1="-80" x2="120" y2="-80" stroke="#FF6347" stroke-width="5"/>
+    <line x1="120" y1="-80" x2="200" y2="0" stroke="#FF6347" stroke-width="5"/>
+    <line x1="80" y1="-80" x2="100" y2="0" stroke="#FF6347" stroke-width="5"/>
+    <line x1="100" y1="0" x2="0" y2="0" stroke="#FF6347" stroke-width="5"/>
+
+    <!-- Seat -->
+    <ellipse cx="80" cy="-85" rx="20" ry="8" fill="#654321"/>
+
+    <!-- Handlebars -->
+    <line x1="200" y1="0" x2="190" y2="-60" stroke="#333" stroke-width="4"/>
+    <line x1="180" y1="-60" x2="200" y2="-60" stroke="#333" stroke-width="4"/>
+
+    <!-- Pedals -->
+    <circle cx="100" cy="0" r="5" fill="#333"/>
+    <line x1="90" y1="0" x2="110" y2="0" stroke="#333" stroke-width="3"/>
+  </g>
+
+  <!-- Pelican -->
+  <g id="pelican" transform="translate(380, 230)">
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="60" ry="80" fill="#FFFFFF" stroke="#333" stroke-width="2"/>
+
+    <!-- Belly pouch (lighter yellow) -->
+    <ellipse cx="0" cy="20" rx="45" ry="50" fill="#FFF8DC"/>
+
+    <!-- Wing -->
+    <ellipse cx="-40" cy="-10" rx="50" ry="30" fill="#E0E0E0" stroke="#333" stroke-width="2" transform="rotate(-20 -40 -10)"/>
+
+    <!-- Neck -->
+    <ellipse cx="30" cy="-50" rx="20" ry="50" fill="#FFFFFF" stroke="#333" stroke-width="2" transform="rotate(30 30 -50)"/>
+
+    <!-- Head -->
+    <ellipse cx="60" cy="-80" rx="35" ry="30" fill="#FFFFFF" stroke="#333" stroke-width="2"/>
+
+    <!-- Eye -->
+    <circle cx="70" cy="-85" r="5" fill="#333"/>
+
+    <!-- Beak upper -->
+    <path d="M 85 -80 Q 140 -85 145 -75 L 140 -70 Q 130 -75 85 -75 Z" fill="#FFA500" stroke="#333" stroke-width="2"/>
+
+    <!-- Beak lower with pouch -->
+    <path d="M 85 -75 Q 140 -70 145 -75 Q 145 -60 140 -50 Q 120 -55 100 -60 Q 90 -65 85 -75 Z" fill="#FFD700" stroke="#333" stroke-width="2"/>
+
+    <!-- Legs reaching to pedals -->
+    <line x1="-10" y1="80" x2="-20" y2="120" stroke="#FFA500" stroke-width="4"/>
+    <line x1="10" y1="80" x2="20" y2="120" stroke="#FFA500" stroke-width="4"/>
+
+    <!-- Feet on pedals -->
+    <path d="M -20 120 L -30 120 L -25 125 L -15 125 Z" fill="#FFA500" stroke="#333" stroke-width="1"/>
+    <path d="M 20 120 L 10 120 L 15 125 L 25 125 Z" fill="#FFA500" stroke="#333" stroke-width="1"/>
+
+    <!-- Wing holding handlebar -->
+    <line x1="40" y1="-20" x2="10" y2="-30" stroke="#E0E0E0" stroke-width="8"/>
+  </g>
+
+  <!-- Sun -->
+  <circle cx="700" cy="100" r="50" fill="#FFD700"/>
+
+  <!-- Clouds -->
+  <g id="cloud1" opacity="0.8">
+    <ellipse cx="150" cy="100" rx="40" ry="25" fill="#FFFFFF"/>
+    <ellipse cx="180" cy="100" rx="35" ry="25" fill="#FFFFFF"/>
+    <ellipse cx="200" cy="100" rx="40" ry="25" fill="#FFFFFF"/>
+  </g>
+
+  <g id="cloud2" opacity="0.8">
+    <ellipse cx="550" cy="150" rx="35" ry="20" fill="#FFFFFF"/>
+    <ellipse cx="575" cy="150" rx="30" ry="20" fill="#FFFFFF"/>
+    <ellipse cx="595" cy="150" rx="35" ry="20" fill="#FFFFFF"/>
+  </g>
+</svg>

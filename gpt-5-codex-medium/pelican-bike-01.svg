@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#94ccea"/>
+      <stop offset="100%" stop-color="#f7f5d3"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#9dc77a"/>
+      <stop offset="100%" stop-color="#6ba35c"/>
+    </linearGradient>
+    <linearGradient id="pelican-body" x1="0.2" x2="0.8" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f7f5f0"/>
+      <stop offset="100%" stop-color="#dad6cd"/>
+    </linearGradient>
+    <radialGradient id="wheel-shine" cx="0.4" cy="0.4" r="0.9">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#2f2f2f"/>
+    </radialGradient>
+    <style>
+      .outline { stroke: #2f2f2f; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+      .feather { fill: url(#pelican-body); stroke: #b8b3ac; stroke-width: 3; }
+      .accent { fill: #f4a261; }
+      .dark { fill: #2f2f2f; }
+      .bike-frame { fill: none; stroke: #25588a; stroke-width: 12; stroke-linecap: round; stroke-linejoin: round; }
+      .wheel { fill: url(#wheel-shine); stroke: #1a1a1a; stroke-width: 6; }
+    </style>
+  </defs>
+  <rect width="800" height="800" fill="url(#sky)"/>
+  <path d="M0 620 Q200 580 400 620 T800 600 V800 H0 Z" fill="url(#ground)"/>
+  <g transform="translate(170 200)">
+    <g transform="translate(180 130)">
+      <circle class="wheel" cx="110" cy="360" r="110"/>
+      <circle class="wheel" cx="430" cy="360" r="110"/>
+      <path class="bike-frame" d="M120 350 L260 220 L400 360 L260 360 Z"/>
+      <path class="bike-frame" d="M260 360 L260 250"/>
+      <path class="bike-frame" d="M260 250 L380 150"/>
+      <path class="bike-frame" d="M380 150 L460 160"/>
+      <path class="bike-frame" d="M430 360 L520 260"/>
+      <rect x="245" y="360" width="30" height="80" rx="10" fill="#2f2f2f"/>
+      <circle cx="380" cy="150" r="16" fill="#25588a"/>
+      <rect x="455" y="150" width="90" height="20" rx="10" fill="#2f2f2f" transform="rotate(8 500 160)"/>
+      <path class="dark" d="M100 360 H210" stroke="#2f2f2f" stroke-width="16" stroke-linecap="round"/>
+      <path class="dark" d="M410 360 H520" stroke="#2f2f2f" stroke-width="16" stroke-linecap="round"/>
+    </g>
+    <g transform="translate(210 0)">
+      <ellipse class="feather" cx="240" cy="210" rx="160" ry="120"/>
+      <ellipse class="feather" cx="156" cy="248" rx="90" ry="70" transform="rotate(-25 156 248)"/>
+      <ellipse class="feather" cx="324" cy="248" rx="90" ry="70" transform="rotate(25 324 248)"/>
+      <path class="feather" d="M220 100 Q250 40 310 60 Q360 80 380 140 Q330 130 300 180 Q270 230 240 200 Q210 170 200 120 Z"/>
+      <path class="accent" d="M360 170 Q440 140 472 160 Q488 212 420 230 Q356 232 340 210 Z"/>
+      <circle cx="360" cy="150" r="18" fill="#2f2f2f"/>
+      <circle cx="364" cy="148" r="8" fill="#ffffff"/>
+      <path class="accent" d="M470 165 Q520 170 540 210 Q522 240 476 230 Z"/>
+      <path class="accent" d="M480 220 Q530 240 520 260 Q488 280 450 260 Z"/>
+      <path fill="#fbd78b" stroke="#f4a261" stroke-width="4" d="M250 330 Q300 360 360 360 Q420 360 450 340 Q460 380 430 410 Q380 450 320 440 Q260 430 230 380 Q220 360 250 330 Z"/>
+      <path fill="#f7f1e3" stroke="#cbc5b6" stroke-width="4" d="M200 320 Q230 420 210 480 Q190 520 160 520 Q130 520 110 500 Q90 480 90 450 Q100 420 140 340 Z"/>
+      <path fill="#f7f1e3" stroke="#cbc5b6" stroke-width="4" d="M420 330 Q460 410 520 430 Q550 440 580 420 Q600 390 580 360 Q560 330 500 310 Z"/>
+    </g>
+    <path class="dark" d="M300 410 Q320 440 340 440" stroke="#2f2f2f" stroke-width="14" stroke-linecap="round"/>
+    <path class="dark" d="M440 410 Q420 440 400 440" stroke="#2f2f2f" stroke-width="14" stroke-linecap="round"/>
+  </g>
+  <ellipse cx="400" cy="650" rx="260" ry="30" fill="#7f8f6f" opacity="0.35"/>
+</svg>

@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <style>
+    .background { fill: #e0f7fa; }
+    .road { fill: #aaa; }
+    .pelican { fill: #f5f5dc; stroke: #333; stroke-width: 1; }
+    .pouch { fill: #f9a602; }
+    .eye { fill: #000; }
+    .bicycle { fill: none; stroke: #555; stroke-width: 2; }
+    .wheel { fill: #fff; stroke: #333; stroke-width: 1; }
+    .tire { fill: #333; }
+    .spoke { stroke: #999; stroke-width: 0.5; }
+    .handlebar { stroke: #333; stroke-width: 1.5; }
+    .seat { fill: #444; }
+    .chain { stroke: #666; stroke-width: 1; fill: none; }
+  </style>
+
+  <!-- Background -->
+  <rect class="background" width="200" height="200" />
+  <path class="road" d="M0,150 h200 v50 h-200 z" />
+
+  <!-- Bicycle and Pelican Group (for rotation) -->
+  <g transform="rotate(-5, 100, 100)">
+
+    <!-- Bicycle -->
+    <g class="bicycle">
+      <!-- Frame -->
+      <path d="M100,100 l20,-30 l30,0 l-15,30" />
+      <line x1="120" y1="70" x2="100" y2="100" />
+      <line x1="105" y1="100" x2="135" y2="70" />
+      <line x1="90" y1="110" x2="105" y2="100" />
+      <line x1="140" y1="110" x2="105" y2="100" />
+      
+      <!-- Handlebars -->
+      <path class="handlebar" d="M135,70 q5,-15 15,-10" />
+      
+      <!-- Seat -->
+      <polygon class="seat" points="95,68 110,68 105,75" />
+
+      <!-- Wheels -->
+      <g class="wheel">
+        <circle cx="90" cy="110" r="15" />
+        <circle class="tire" cx="90" cy="110" r="12" />
+        <g class="spokes">
+            <line x1="90" y1="110" x2="90" y2="95" class="spoke" />
+            <line x1="90" y1="110" x2="103" y2="110" class="spoke" />
+            <line x1="90" y1="110" x2="77" y2="110" class="spoke" />
+            <line x1="90" y1="110" x2="90" y2="125" class="spoke" />
+        </g>
+      </g>
+      <g class="wheel">
+        <circle cx="140" cy="110" r="15" />
+        <circle class="tire" cx="140" cy="110" r="12" />
+        <g class="spokes">
+            <line x1="140" y1="110" x2="140" y2="95" class="spoke" />
+            <line x1="140" y1="110" x2="153" y2="110" class="spoke" />
+            <line x1="140" y1="110" x2="127" y2="110" class="spoke" />
+            <line x1="140" y1="110" x2="140" y2="125" class="spoke" />
+        </g>
+      </g>
+
+      <!-- Pedals and Chain -->
+      <circle cx="105" cy="100" r="4" />
+      <path class="chain" d="M105,100 a10,5 0 0,1 0,10 a10,5 0 0,1 0,-10" transform="translate(35,10)" />
+      <circle cx="140" cy="110" r="3" />
+    </g>
+
+    <!-- Pelican -->
+    <g class="pelican">
+      <!-- Body -->
+      <path d="M85,75 a25,30 0 0,1 30,-5 l5,30 h-25 z" />
+      <!-- Head -->
+      <path d="M105,45 a15,15 0 0,1 10,20 l-10,5 z" />
+      <!-- Pouch -->
+      <path class="pouch" d="M110,60 q10,15 -5,15" />
+      <!-- Eye -->
+      <circle class="eye" cx="117" cy="55" r="2" />
+      <!-- Wing -->
+      <path d="M95,80 a20,15 0 0,1 30,10 l-10,-5 q10,-5 15,-15" />
+      <!-- Legs -->
+      <path d="M100,105 l5,5 l-5,0" />
+      <path d="M105,100 l0,10 l5,0" />
+    </g>
+  </g>
+</svg>

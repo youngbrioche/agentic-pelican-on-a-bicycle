@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sky background with gradient -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#ADD8E6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B0E0E6;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="sunGradient">
+      <stop offset="0%" style="stop-color:#FFFF00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFD700;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#skyGradient)"/>
+
+  <!-- Ground with texture -->
+  <rect x="0" y="450" width="800" height="150" fill="#90EE90"/>
+  <!-- Road -->
+  <rect x="0" y="465" width="800" height="80" fill="#696969" opacity="0.7"/>
+  <!-- Road markings -->
+  <g stroke="#FFF" stroke-width="4" stroke-dasharray="40,20" opacity="0.7">
+    <line x1="0" y1="505" x2="800" y2="505"/>
+  </g>
+
+  <!-- Background trees -->
+  <ellipse cx="650" cy="400" rx="30" ry="60" fill="#228B22" opacity="0.5"/>
+  <rect x="640" y="420" width="20" height="40" fill="#8B4513" opacity="0.5"/>
+
+  <ellipse cx="720" cy="380" rx="35" ry="70" fill="#228B22" opacity="0.4"/>
+  <rect x="708" y="410" width="24" height="50" fill="#8B4513" opacity="0.4"/>
+
+  <!-- Motion lines behind bicycle -->
+  <g stroke="#87CEEB" stroke-width="4" opacity="0.7" stroke-linecap="round">
+    <line x1="50" y1="280" x2="180" y2="280"/>
+    <line x1="40" y1="320" x2="160" y2="320"/>
+    <line x1="60" y1="360" x2="180" y2="360"/>
+    <line x1="30" y1="400" x2="150" y2="400"/>
+  </g>
+
+  <!-- Flying birds in background -->
+  <g transform="translate(100,150)">
+    <path d="M 0 0 Q -10 -5 -20 0 M 0 0 Q 10 -5 20 0" stroke="#333" stroke-width="2" fill="none" opacity="0.3"/>
+  </g>
+  <g transform="translate(150,180)">
+    <path d="M 0 0 Q -8 -4 -16 0 M 0 0 Q 8 -4 16 0" stroke="#333" stroke-width="2" fill="none" opacity="0.3"/>
+  </g>
+
+  <!-- Bicycle with basket -->
+  <!-- Back wheel -->
+  <circle cx="250" cy="420" r="60" fill="none" stroke="#333" stroke-width="8"/>
+  <circle cx="250" cy="420" r="8" fill="#333"/>
+  <!-- Detailed spokes -->
+  <g stroke="#666" stroke-width="2">
+    <line x1="250" y1="420" x2="250" y2="360"/>
+    <line x1="250" y1="420" x2="310" y2="420"/>
+    <line x1="250" y1="420" x2="250" y2="480"/>
+    <line x1="250" y1="420" x2="190" y2="420"/>
+    <line x1="250" y1="420" x2="292" y2="378"/>
+    <line x1="250" y1="420" x2="208" y2="378"/>
+    <line x1="250" y1="420" x2="292" y2="462"/>
+    <line x1="250" y1="420" x2="208" y2="462"/>
+  </g>
+  <!-- Tire tread -->
+  <circle cx="250" cy="420" r="60" fill="none" stroke="#222" stroke-width="2" stroke-dasharray="8,4" opacity="0.5"/>
+
+  <!-- Front wheel -->
+  <circle cx="500" cy="420" r="60" fill="none" stroke="#333" stroke-width="8"/>
+  <circle cx="500" cy="420" r="8" fill="#333"/>
+  <g stroke="#666" stroke-width="2">
+    <line x1="500" y1="420" x2="500" y2="360"/>
+    <line x1="500" y1="420" x2="560" y2="420"/>
+    <line x1="500" y1="420" x2="500" y2="480"/>
+    <line x1="500" y1="420" x2="440" y2="420"/>
+    <line x1="500" y1="420" x2="542" y2="378"/>
+    <line x1="500" y1="420" x2="458" y2="378"/>
+    <line x1="500" y1="420" x2="542" y2="462"/>
+    <line x1="500" y1="420" x2="458" y2="462"/>
+  </g>
+  <!-- Tire tread -->
+  <circle cx="500" cy="420" r="60" fill="none" stroke="#222" stroke-width="2" stroke-dasharray="8,4" opacity="0.5"/>
+
+  <!-- Frame -->
+  <line x1="250" y1="420" x2="375" y2="310" stroke="#FF4500" stroke-width="10"/>
+  <line x1="500" y1="420" x2="375" y2="310" stroke="#FF4500" stroke-width="10"/>
+  <line x1="375" y1="310" x2="375" y2="260" stroke="#FF4500" stroke-width="10"/>
+  <line x1="250" y1="420" x2="350" y2="350" stroke="#FF4500" stroke-width="10"/>
+  <line x1="350" y1="350" x2="375" y2="310" stroke="#FF4500" stroke-width="8"/>
+
+  <!-- Chain with detail -->
+  <ellipse cx="350" cy="355" rx="22" ry="18" fill="none" stroke="#666" stroke-width="3"/>
+  <g stroke="#666" stroke-width="3">
+    <path d="M 328 355 L 250 420" stroke-dasharray="5,3"/>
+    <path d="M 372 355 L 250 420" stroke-dasharray="5,3"/>
+  </g>
+
+  <!-- Seat -->
+  <ellipse cx="375" cy="260" rx="48" ry="20" fill="#8B4513"/>
+  <ellipse cx="375" cy="258" rx="43" ry="17" fill="#A0522D"/>
+  <!-- Seat springs -->
+  <path d="M 365 278 Q 365 285 365 290" stroke="#666" stroke-width="3" fill="none"/>
+  <path d="M 375 278 Q 375 285 375 290" stroke="#666" stroke-width="3" fill="none"/>
+  <path d="M 385 278 Q 385 285 385 290" stroke="#666" stroke-width="3" fill="none"/>
+
+  <!-- Handlebars -->
+  <line x1="500" y1="420" x2="480" y2="290" stroke="#FF4500" stroke-width="10"/>
+  <line x1="480" y1="290" x2="480" y2="275" stroke="#666" stroke-width="8"/>
+  <line x1="480" y1="275" x2="445" y2="270" stroke="#333" stroke-width="6"/>
+  <line x1="480" y1="275" x2="515" y2="270" stroke="#333" stroke-width="6"/>
+  <!-- Grips with texture -->
+  <ellipse cx="445" cy="270" rx="14" ry="11" fill="#333"/>
+  <ellipse cx="515" cy="270" rx="14" ry="11" fill="#333"/>
+  <line x1="440" y1="270" x2="450" y2="270" stroke="#555" stroke-width="1"/>
+  <line x1="510" y1="270" x2="520" y2="270" stroke="#555" stroke-width="1"/>
+
+  <!-- Bicycle basket with fish -->
+  <g transform="translate(480,240)">
+    <!-- Basket -->
+    <rect x="-25" y="0" width="50" height="35" fill="#8B7355" stroke="#654321" stroke-width="2"/>
+    <line x1="-25" y1="5" x2="25" y2="5" stroke="#654321" stroke-width="1"/>
+    <line x1="-25" y1="10" x2="25" y2="10" stroke="#654321" stroke-width="1"/>
+    <line x1="-25" y1="15" x2="25" y2="15" stroke="#654321" stroke-width="1"/>
+    <line x1="-25" y1="20" x2="25" y2="20" stroke="#654321" stroke-width="1"/>
+    <line x1="-25" y1="25" x2="25" y2="25" stroke="#654321" stroke-width="1"/>
+    <line x1="-25" y1="30" x2="25" y2="30" stroke="#654321" stroke-width="1"/>
+    <!-- Fish in basket -->
+    <ellipse cx="0" cy="15" rx="15" ry="8" fill="#4682B4"/>
+    <path d="M 12 15 L 18 10 L 18 20 Z" fill="#4682B4"/>
+    <circle cx="-8" cy="13" r="2" fill="#FFF"/>
+    <circle cx="-8" cy="13" r="1" fill="#000"/>
+    <!-- Another fish -->
+    <ellipse cx="-5" cy="25" rx="12" ry="6" fill="#FF6347" transform="rotate(-20 -5 25)"/>
+    <path d="M 5 24 L 10 20 L 10 28 Z" fill="#FF6347"/>
+  </g>
+
+  <!-- Bell -->
+  <circle cx="465" cy="280" r="10" fill="#FFD700" stroke="#333" stroke-width="1"/>
+  <line x1="465" y1="270" x2="465" y2="275" stroke="#333" stroke-width="2"/>
+  <circle cx="465" cy="283" r="2" fill="#333"/>
+
+  <!-- Pedals and crank -->
+  <circle cx="350" cy="355" r="28" fill="none" stroke="#666" stroke-width="5"/>
+  <line x1="350" y1="355" x2="368" y2="335" stroke="#666" stroke-width="7"/>
+  <line x1="350" y1="355" x2="332" y2="375" stroke="#666" stroke-width="7"/>
+  <ellipse cx="368" cy="335" rx="20" ry="12" fill="#333"/>
+  <ellipse cx="332" cy="375" rx="20" ry="12" fill="#333"/>
+
+  <!-- Pelican in dynamic forward-leaning position -->
+  <!-- Body tilted forward -->
+  <g transform="rotate(-10 375 200)">
+    <ellipse cx="375" cy="200" rx="80" ry="68" fill="#FFF"/>
+    <ellipse cx="380" cy="205" rx="75" ry="63" fill="#F8F8FF"/>
+    <!-- Chest highlight -->
+    <ellipse cx="395" cy="190" rx="42" ry="37" fill="#FFF" opacity="0.7"/>
+  </g>
+
+  <!-- Neck stretched forward -->
+  <path d="M 430 175 Q 460 165 485 145" fill="#FFF" stroke="#FFF" stroke-width="38"/>
+
+  <!-- Head focused forward -->
+  <g transform="rotate(-5 490 140)">
+    <ellipse cx="490" cy="140" rx="42" ry="37" fill="#FFF"/>
+    <ellipse cx="495" cy="140" rx="38" ry="34" fill="#F8F8FF"/>
+  </g>
+
+  <!-- Large pelican beak and pouch -->
+  <path d="M 525 135 L 585 140 L 580 152 L 525 147 Z" fill="#FFA500"/>
+  <!-- Prominent gular pouch -->
+  <path d="M 525 147 Q 555 175 580 152" fill="#FFB366" stroke="#FF8C00" stroke-width="4"/>
+  <path d="M 530 152 Q 550 168 570 154" fill="#FFA07A" opacity="0.6"/>
+  <path d="M 535 155 Q 545 163 560 156" fill="#FFB366" opacity="0.4"/>
+
+  <!-- Excited eye -->
+  <ellipse cx="495" cy="135" rx="11" ry="10" fill="#333"/>
+  <circle cx="497" cy="133" r="5" fill="#FFF"/>
+  <circle cx="495" cy="136" r="7" fill="#000"/>
+  <!-- Eyebrow for expression -->
+  <path d="M 485 125 Q 495 123 505 125" stroke="#333" stroke-width="2" fill="none"/>
+
+  <!-- Wing firmly gripping handlebar -->
+  <g transform="rotate(15 440 250)">
+    <path d="M 390 190 Q 420 220 445 265" fill="#F5F5DC" stroke="#F5F5DC" stroke-width="30"/>
+    <path d="M 400 195 Q 425 225 445 265" fill="#FFF" opacity="0.5"/>
+    <!-- Wing "fingers" gripping -->
+    <ellipse cx="445" cy="265" rx="18" ry="12" fill="#F5F5DC"/>
+    <line x1="435" y1="260" x2="445" y2="270" stroke="#DDD" stroke-width="3"/>
+    <line x1="440" y1="258" x2="448" y2="268" stroke="#DDD" stroke-width="3"/>
+    <line x1="445" y1="257" x2="450" y2="266" stroke="#DDD" stroke-width="3"/>
+  </g>
+
+  <!-- Other wing extended back for balance -->
+  <g transform="rotate(-35 320 200)">
+    <ellipse cx="320" cy="200" rx="50" ry="90" fill="#F5F5DC"/>
+    <path d="M 300 175 Q 290 210 300 250" stroke="#CCC" stroke-width="2" fill="none"/>
+    <path d="M 310 170 Q 300 205 310 245" stroke="#CCC" stroke-width="2" fill="none"/>
+    <path d="M 320 165 Q 310 200 320 240" stroke="#CCC" stroke-width="2" fill="none"/>
+    <path d="M 330 170 Q 320 205 330 245" stroke="#CCC" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- Webbed feet actively pedaling -->
+  <!-- Left foot pushing down -->
+  <line x1="365" y1="255" x2="368" y2="328" stroke="#FFA500" stroke-width="15"/>
+  <g transform="translate(368,335)">
+    <path d="M -15 0 L 0 5 L 15 0 L 10 10 L 0 15 L -10 10 Z" fill="#FF8C00"/>
+    <path d="M -10 7 L 0 10 L 10 7" fill="none" stroke="#FF7F50" stroke-width="2"/>
+    <path d="M -7 9 L 0 12 L 7 9" fill="none" stroke="#FF7F50" stroke-width="1"/>
+  </g>
+
+  <!-- Right foot pulling up -->
+  <line x1="385" y1="255" x2="335" y2="370" stroke="#FFA500" stroke-width="15"/>
+  <g transform="translate(332,375)">
+    <path d="M -15 0 L 0 5 L 15 0 L 10 10 L 0 15 L -10 10 Z" fill="#FF8C00"/>
+    <path d="M -10 7 L 0 10 L 10 7" fill="none" stroke="#FF7F50" stroke-width="2"/>
+    <path d="M -7 9 L 0 12 L 7 9" fill="none" stroke="#FF7F50" stroke-width="1"/>
+  </g>
+
+  <!-- Detailed tail feathers -->
+  <g transform="rotate(-45 300 220)">
+    <ellipse cx="300" cy="220" rx="35" ry="20" fill="#F5F5DC"/>
+    <ellipse cx="295" cy="225" rx="30" ry="17" fill="#FFF" opacity="0.8"/>
+    <ellipse cx="290" cy="218" rx="25" ry="14" fill="#F5F5DC"/>
+    <path d="M 280 215 L 310 215" stroke="#DDD" stroke-width="1"/>
+    <path d="M 282 220 L 308 220" stroke="#DDD" stroke-width="1"/>
+    <path d="M 285 225 L 305 225" stroke="#DDD" stroke-width="1"/>
+  </g>
+
+  <!-- Sun with glow effect -->
+  <circle cx="700" cy="100" r="55" fill="url(#sunGradient)" opacity="0.3"/>
+  <circle cx="700" cy="100" r="50" fill="url(#sunGradient)"/>
+  <g stroke="#FFD700" stroke-width="6" stroke-linecap="round">
+    <line x1="700" y1="25" x2="700" y2="45"/>
+    <line x1="700" y1="155" x2="700" y2="175"/>
+    <line x1="625" y1="100" x2="645" y2="100"/>
+    <line x1="755" y1="100" x2="775" y2="100"/>
+    <line x1="645" y1="45" x2="660" y2="60"/>
+    <line x1="755" y1="45" x2="740" y2="60"/>
+    <line x1="645" y1="155" x2="660" y2="140"/>
+    <line x1="755" y1="155" x2="740" y2="140"/>
+  </g>
+
+  <!-- Clouds -->
+  <g opacity="0.8">
+    <ellipse cx="150" cy="120" rx="40" ry="25" fill="#FFF"/>
+    <ellipse cx="180" cy="115" rx="45" ry="30" fill="#FFF"/>
+    <ellipse cx="210" cy="125" rx="35" ry="20" fill="#FFF"/>
+  </g>
+
+  <g opacity="0.7">
+    <ellipse cx="550" cy="75" rx="38" ry="22" fill="#FFF"/>
+    <ellipse cx="575" cy="80" rx="32" ry="19" fill="#FFF"/>
+    <ellipse cx="595" cy="77" rx="28" ry="17" fill="#FFF"/>
+  </g>
+
+  <!-- Small dust clouds from wheels -->
+  <ellipse cx="230" cy="480" rx="25" ry="15" fill="#D2691E" opacity="0.3"/>
+  <ellipse cx="480" cy="480" rx="25" ry="15" fill="#D2691E" opacity="0.3"/>
+</svg>

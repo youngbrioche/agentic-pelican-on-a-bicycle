@@ -1,0 +1,88 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sky background -->
+  <rect width="800" height="600" fill="#87CEEB"/>
+
+  <!-- Ground -->
+  <rect y="450" width="800" height="150" fill="#90EE90"/>
+
+  <!-- Bicycle Frame -->
+  <g id="bicycle">
+    <!-- Front wheel -->
+    <circle cx="250" cy="420" r="80" fill="none" stroke="#333" stroke-width="3"/>
+    <circle cx="250" cy="420" r="75" fill="none" stroke="#666" stroke-width="1" opacity="0.5"/>
+    <!-- Front wheel spokes -->
+    <line x1="250" y1="340" x2="250" y2="500" stroke="#999" stroke-width="1"/>
+    <line x1="170" y1="420" x2="330" y2="420" stroke="#999" stroke-width="1"/>
+    <line x1="180" y1="350" x2="320" y2="490" stroke="#999" stroke-width="1"/>
+    <line x1="320" y1="350" x2="180" y2="490" stroke="#999" stroke-width="1"/>
+
+    <!-- Back wheel -->
+    <circle cx="550" cy="420" r="80" fill="none" stroke="#333" stroke-width="3"/>
+    <circle cx="550" cy="420" r="75" fill="none" stroke="#666" stroke-width="1" opacity="0.5"/>
+    <!-- Back wheel spokes -->
+    <line x1="550" y1="340" x2="550" y2="500" stroke="#999" stroke-width="1"/>
+    <line x1="470" y1="420" x2="630" y2="420" stroke="#999" stroke-width="1"/>
+    <line x1="480" y1="350" x2="620" y2="490" stroke="#999" stroke-width="1"/>
+    <line x1="620" y1="350" x2="480" y2="490" stroke="#999" stroke-width="1"/>
+
+    <!-- Frame -->
+    <line x1="250" y1="420" x2="400" y2="300" stroke="#333" stroke-width="4"/>
+    <line x1="400" y1="300" x2="550" y2="420" stroke="#333" stroke-width="4"/>
+    <line x1="250" y1="420" x2="550" y2="420" stroke="#333" stroke-width="4"/>
+    <line x1="400" y1="300" x2="350" y2="400" stroke="#333" stroke-width="4"/>
+
+    <!-- Handlebars -->
+    <line x1="250" y1="310" x2="200" y2="280" stroke="#333" stroke-width="3"/>
+    <circle cx="200" cy="280" r="8" fill="#666"/>
+    <circle cx="240" cy="300" r="8" fill="#666"/>
+
+    <!-- Pedals and crank -->
+    <circle cx="400" cy="380" r="10" fill="#444"/>
+    <line x1="400" y1="380" x2="420" y2="350" stroke="#333" stroke-width="2"/>
+    <line x1="400" y1="380" x2="380" y2="410" stroke="#333" stroke-width="2"/>
+
+    <!-- Seat -->
+    <ellipse cx="400" cy="270" rx="30" ry="10" fill="#8B4513"/>
+    <line x1="380" y1="270" x2="380" y2="300" stroke="#333" stroke-width="2"/>
+    <line x1="420" y1="270" x2="420" y2="300" stroke="#333" stroke-width="2"/>
+  </g>
+
+  <!-- Pelican -->
+  <g id="pelican">
+    <!-- Body -->
+    <ellipse cx="350" cy="280" rx="60" ry="80" fill="#FFF"/>
+    <circle cx="350" cy="200" r="45" fill="#FFF"/>
+
+    <!-- Head -->
+    <ellipse cx="340" cy="160" rx="30" ry="35" fill="#F5F5DC"/>
+
+    <!-- Eye -->
+    <circle cx="355" cy="155" r="6" fill="#000"/>
+    <circle cx="357" cy="153" r="2" fill="#FFF"/>
+
+    <!-- Beak (pelican's distinctive long beak) -->
+    <path d="M 325 165 Q 300 170 280 168 Q 290 175 320 177 Z" fill="#FFA500" stroke="#FF8C00" stroke-width="1"/>
+    <path d="M 320 177 Q 300 180 270 182" fill="none" stroke="#FFB84D" stroke-width="3"/>
+
+    <!-- Neck -->
+    <path d="M 330 190 Q 320 220 330 250" fill="none" stroke="#F5F5DC" stroke-width="25"/>
+
+    <!-- Wing -->
+    <ellipse cx="280" cy="280" rx="50" ry="70" fill="#D3D3D3" transform="rotate(-30 280 280)"/>
+
+    <!-- Wing feather details -->
+    <path d="M 260 240 Q 250 260 260 300" fill="none" stroke="#A9A9A9" stroke-width="2" opacity="0.6"/>
+    <path d="M 275 230 Q 265 250 275 310" fill="none" stroke="#A9A9A9" stroke-width="2" opacity="0.6"/>
+    <path d="M 290 225 Q 280 245 285 320" fill="none" stroke="#A9A9A9" stroke-width="2" opacity="0.6"/>
+
+    <!-- Tail -->
+    <ellipse cx="390" cy="340" rx="40" ry="30" fill="#D3D3D3"/>
+
+    <!-- Feet on pedals -->
+    <ellipse cx="410" cy="375" rx="12" ry="15" fill="#FFB6C1"/>
+    <ellipse cx="390" cy="410" rx="12" ry="15" fill="#FFB6C1"/>
+
+    <!-- Pelican's pouch (throat) -->
+    <ellipse cx="330" cy="240" rx="35" ry="45" fill="#FFE4E1" opacity="0.7"/>
+  </g>
+</svg>

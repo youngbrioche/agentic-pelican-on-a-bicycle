@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200">
+  <title>Pelican on a Bicycle — v01</title>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b7e3ff"/>
+      <stop offset="100%" stop-color="#e8f6ff"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d7f0d0"/>
+      <stop offset="100%" stop-color="#b7e3aa"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+    <filter id="soft" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="1.2"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1600" height="900" fill="url(#sky)"/>
+  <rect x="0" y="900" width="1600" height="300" fill="url(#ground)"/>
+  <g opacity="0.25" filter="url(#soft)">
+    <ellipse cx="800" cy="980" rx="520" ry="50" fill="#000" opacity="0.18"/>
+  </g>
+
+  <!-- Bicycle Group -->
+  <g id="bike" transform="translate(350, 720)" filter="url(#shadow)">
+    <!-- Wheels -->
+    <g id="rear-wheel" transform="translate(250, 0)">
+      <circle r="120" fill="#0b0f14"/>
+      <circle r="110" fill="#e6eef7" stroke="#2a3950" stroke-width="10"/>
+      <circle r="16" fill="#2a3950"/>
+      <!-- spokes -->
+      <g stroke="#7e93ad" stroke-width="3">
+        <line x1="0" y1="0" x2="0" y2="-110"/>
+        <line x1="0" y1="0" x2="0" y2="110"/>
+        <line x1="0" y1="0" x2="110" y2="0"/>
+        <line x1="0" y1="0" x2="-110" y2="0"/>
+        <line x1="0" y1="0" x2="78" y2="78"/>
+        <line x1="0" y1="0" x2="-78" y2="78"/>
+        <line x1="0" y1="0" x2="78" y2="-78"/>
+        <line x1="0" y1="0" x2="-78" y2="-78"/>
+      </g>
+    </g>
+    <g id="front-wheel" transform="translate(720, 0)">
+      <circle r="120" fill="#0b0f14"/>
+      <circle r="110" fill="#e6eef7" stroke="#2a3950" stroke-width="10"/>
+      <circle r="16" fill="#2a3950"/>
+      <g stroke="#7e93ad" stroke-width="3">
+        <line x1="0" y1="0" x2="0" y2="-110"/>
+        <line x1="0" y1="0" x2="0" y2="110"/>
+        <line x1="0" y1="0" x2="110" y2="0"/>
+        <line x1="0" y1="0" x2="-110" y2="0"/>
+        <line x1="0" y1="0" x2="78" y2="78"/>
+        <line x1="0" y1="0" x2="-78" y2="78"/>
+        <line x1="0" y1="0" x2="78" y2="-78"/>
+        <line x1="0" y1="0" x2="-78" y2="-78"/>
+      </g>
+    </g>
+    <!-- Frame -->
+    <g stroke="#2a3950" stroke-width="16" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M250 0 L430 -150 L720 0"/>
+      <path d="M430 -150 L520 -20"/>
+      <path d="M520 -20 L250 0"/>
+      <path d="M520 -20 L720 0"/>
+      <path d="M520 -20 L520 -210"/>
+    </g>
+    <!-- Seat + post -->
+    <g stroke="#2a3950" stroke-width="14" stroke-linecap="round">
+      <line x1="430" y1="-150" x2="400" y2="-240"/>
+    </g>
+    <rect x="350" y="-270" rx="16" ry="16" width="160" height="40" fill="#27364a" stroke="#1b2535" stroke-width="6"/>
+    <!-- Handlebar + stem -->
+    <g stroke="#2a3950" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="520" y1="-210" x2="560" y2="-280"/>
+      <path d="M560 -280 C610 -300, 660 -300, 710 -280"/>
+      <line x1="710" y1="-280" x2="740" y2="-250"/>
+    </g>
+    <!-- Crank + pedals -->
+    <g transform="translate(520,-20)">
+      <circle r="28" fill="#2a3950"/>
+      <g stroke="#2a3950" stroke-width="12" stroke-linecap="round">
+        <line x1="0" y1="0" x2="38" y2="38"/>
+        <line x1="0" y1="0" x2="-44" y2="-20"/>
+      </g>
+      <g fill="#27364a" stroke="#1b2535" stroke-width="6">
+        <rect x="38" y="38" width="70" height="18" rx="8" ry="8"/>
+        <rect x="-114" y="-34" width="70" height="18" rx="8" ry="8"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Pelican -->
+  <g id="pelican" transform="translate(780, 510)" filter="url(#shadow)">
+    <!-- Tail -->
+    <path d="M-260,120 C-320,70 -330,20 -300,-10 C-260,10 -230,40 -210,80 Z" fill="#d6dde6" stroke="#9eacbd" stroke-width="6"/>
+    <!-- Body -->
+    <ellipse cx="-100" cy="70" rx="190" ry="140" fill="#f7fbff" stroke="#9eacbd" stroke-width="8"/>
+    <!-- Wing -->
+    <path d="M-200,40 C-240,100 -200,170 -130,180 C-60,190 10,140 0,80 C-10,20 -60,10 -120,20 Z" fill="#e9f1f9" stroke="#9eacbd" stroke-width="6"/>
+    <!-- Neck -->
+    <path d="M10,0 C60,10 80,40 90,80 C100,130 60,170 20,180 C-10,186 -30,176 -40,160 C-20,150 0,130 6,100 C12,70 6,40 -10,10 Z" fill="#f7fbff" stroke="#9eacbd" stroke-width="6"/>
+    <!-- Head -->
+    <circle cx="110" cy="20" r="52" fill="#f7fbff" stroke="#9eacbd" stroke-width="6"/>
+    <!-- Eye -->
+    <circle cx="125" cy="10" r="10" fill="#2a3950"/>
+    <circle cx="128" cy="8" r="4" fill="#fff"/>
+    <!-- Beak -->
+    <path d="M140,18 L260,14 C300,16 320,30 300,44 C268,66 210,76 150,58 Z" fill="#ff9b2f" stroke="#d36b00" stroke-width="6"/>
+    <path d="M140,18 L255,2 C275,0 286,6 276,12 C258,23 206,30 150,26 Z" fill="#ffc06b" opacity="0.6"/>
+    <!-- Legs to pedals -->
+    <g stroke="#d36b00" stroke-width="14" stroke-linecap="round">
+      <line x1="-20" y1="170" x2="-240" y2="210"/>
+      <line x1="-20" y1="170" x2="-260" y2="70"/>
+    </g>
+    <!-- Feet on pedals (aligned with bike crank roughly) -->
+    <g fill="#ff9b2f" stroke="#d36b00" stroke-width="6">
+      <ellipse cx="-252" cy="82" rx="36" ry="16" transform="rotate(-10 -252 82)"/>
+      <ellipse cx="-230" cy="208" rx="36" ry="16" transform="rotate(8 -230 208)"/>
+    </g>
+  </g>
+
+  <!-- Foreground tufts -->
+  <g transform="translate(200, 1020)" stroke="#7aa06a" stroke-width="6" stroke-linecap="round">
+    <path d="M0 0 C-10 -30, -20 -40, -26 -52"/>
+    <path d="M40 10 C30 -20, 20 -30, 14 -42"/>
+    <path d="M80 6 C70 -24, 60 -34, 54 -46"/>
+  </g>
+
+  <text x="800" y="1140" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="26" fill="#2a3950" opacity="0.7">Pelican on a Bicycle — draft 01</text>
+</svg>
+

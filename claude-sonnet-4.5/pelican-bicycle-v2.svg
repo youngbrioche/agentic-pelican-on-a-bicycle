@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- Sky background -->
+  <rect width="800" height="600" fill="#87CEEB"/>
+
+  <!-- Ground -->
+  <rect y="450" width="800" height="150" fill="#90EE90"/>
+
+  <!-- Sun -->
+  <circle cx="700" cy="100" r="50" fill="#FFD700"/>
+  <circle cx="700" cy="100" r="45" fill="#FDB813" opacity="0.5"/>
+
+  <!-- Clouds -->
+  <g id="cloud1" opacity="0.8">
+    <ellipse cx="150" cy="100" rx="40" ry="25" fill="#FFFFFF"/>
+    <ellipse cx="180" cy="100" rx="35" ry="25" fill="#FFFFFF"/>
+    <ellipse cx="200" cy="100" rx="40" ry="25" fill="#FFFFFF"/>
+  </g>
+
+  <g id="cloud2" opacity="0.8">
+    <ellipse cx="550" cy="150" rx="35" ry="20" fill="#FFFFFF"/>
+    <ellipse cx="575" cy="150" rx="30" ry="20" fill="#FFFFFF"/>
+    <ellipse cx="595" cy="150" rx="35" ry="20" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Bicycle -->
+  <g id="bicycle" transform="translate(250, 380)">
+    <!-- Back wheel -->
+    <circle cx="0" cy="0" r="45" fill="none" stroke="#333" stroke-width="4"/>
+    <circle cx="0" cy="0" r="3" fill="#333"/>
+    <!-- Spokes -->
+    <line x1="0" y1="0" x2="0" y2="-45" stroke="#333" stroke-width="1.5"/>
+    <line x1="0" y1="0" x2="32" y2="-32" stroke="#333" stroke-width="1.5"/>
+    <line x1="0" y1="0" x2="45" y2="0" stroke="#333" stroke-width="1.5"/>
+    <line x1="0" y1="0" x2="32" y2="32" stroke="#333" stroke-width="1.5"/>
+    <line x1="0" y1="0" x2="0" y2="45" stroke="#333" stroke-width="1.5"/>
+    <line x1="0" y1="0" x2="-32" y2="32" stroke="#333" stroke-width="1.5"/>
+    <line x1="0" y1="0" x2="-45" y2="0" stroke="#333" stroke-width="1.5"/>
+    <line x1="0" y1="0" x2="-32" y2="-32" stroke="#333" stroke-width="1.5"/>
+
+    <!-- Front wheel -->
+    <circle cx="240" cy="0" r="45" fill="none" stroke="#333" stroke-width="4"/>
+    <circle cx="240" cy="0" r="3" fill="#333"/>
+    <!-- Spokes -->
+    <line x1="240" y1="0" x2="240" y2="-45" stroke="#333" stroke-width="1.5"/>
+    <line x1="240" y1="0" x2="272" y2="-32" stroke="#333" stroke-width="1.5"/>
+    <line x1="240" y1="0" x2="285" y2="0" stroke="#333" stroke-width="1.5"/>
+    <line x1="240" y1="0" x2="272" y2="32" stroke="#333" stroke-width="1.5"/>
+    <line x1="240" y1="0" x2="240" y2="45" stroke="#333" stroke-width="1.5"/>
+    <line x1="240" y1="0" x2="208" y2="32" stroke="#333" stroke-width="1.5"/>
+    <line x1="240" y1="0" x2="195" y2="0" stroke="#333" stroke-width="1.5"/>
+    <line x1="240" y1="0" x2="208" y2="-32" stroke="#333" stroke-width="1.5"/>
+
+    <!-- Frame -->
+    <line x1="0" y1="0" x2="90" y2="-70" stroke="#DC143C" stroke-width="6"/>
+    <line x1="90" y1="-70" x2="150" y2="-70" stroke="#DC143C" stroke-width="6"/>
+    <line x1="150" y1="-70" x2="240" y2="0" stroke="#DC143C" stroke-width="6"/>
+    <line x1="90" y1="-70" x2="120" y2="0" stroke="#DC143C" stroke-width="6"/>
+    <line x1="120" y1="0" x2="0" y2="0" stroke="#DC143C" stroke-width="6"/>
+
+    <!-- Seat post and seat -->
+    <line x1="90" y1="-70" x2="90" y2="-100" stroke="#333" stroke-width="4"/>
+    <ellipse cx="90" cy="-100" rx="25" ry="10" fill="#654321"/>
+    <ellipse cx="90" cy="-100" rx="25" ry="8" fill="#8B4513"/>
+
+    <!-- Handlebars stem and bars -->
+    <line x1="240" y1="0" x2="230" y2="-55" stroke="#333" stroke-width="4"/>
+    <line x1="220" y1="-55" x2="240" y2="-55" stroke="#333" stroke-width="4"/>
+    <circle cx="220" cy="-55" r="3" fill="#333"/>
+    <circle cx="240" cy="-55" r="3" fill="#333"/>
+
+    <!-- Pedals and crank -->
+    <circle cx="120" cy="0" r="8" fill="#666"/>
+    <rect x="108" y="-3" width="24" height="6" fill="#444" rx="2"/>
+    <line x1="120" y1="-20" x2="120" y2="20" stroke="#333" stroke-width="3"/>
+  </g>
+
+  <!-- Pelican -->
+  <g id="pelican" transform="translate(340, 240)">
+    <!-- Legs positioned to reach pedals -->
+    <line x1="10" y1="40" x2="30" y2="140" stroke="#FF8C00" stroke-width="5"/>
+    <line x1="-10" y1="40" x2="-30" y2="140" stroke="#FF8C00" stroke-width="5"/>
+
+    <!-- Feet on pedals -->
+    <g transform="translate(30, 140)">
+      <path d="M 0 0 L -5 8 L 10 8 L 5 0 Z" fill="#FF8C00" stroke="#333" stroke-width="1"/>
+      <line x1="5" y1="0" x2="15" y2="-2" stroke="#FF8C00" stroke-width="2"/>
+      <line x1="5" y1="0" x2="12" y2="3" stroke="#FF8C00" stroke-width="2"/>
+    </g>
+    <g transform="translate(-30, 140)">
+      <path d="M 0 0 L -5 8 L 10 8 L 5 0 Z" fill="#FF8C00" stroke="#333" stroke-width="1"/>
+      <line x1="5" y1="0" x2="15" y2="-2" stroke="#FF8C00" stroke-width="2"/>
+      <line x1="5" y1="0" x2="12" y2="3" stroke="#FF8C00" stroke-width="2"/>
+    </g>
+
+    <!-- Body - sitting position -->
+    <ellipse cx="0" cy="0" rx="65" ry="75" fill="#F5F5F5" stroke="#333" stroke-width="2"/>
+
+    <!-- Belly/chest with subtle shading -->
+    <ellipse cx="5" cy="10" rx="50" ry="60" fill="#FFFAF0"/>
+
+    <!-- Wing on far side -->
+    <ellipse cx="-45" cy="-5" rx="55" ry="28" fill="#E8E8E8" stroke="#333" stroke-width="2" transform="rotate(-25 -45 -5)"/>
+
+    <!-- Tail feathers -->
+    <g transform="translate(-60, 20)">
+      <ellipse cx="0" cy="0" rx="25" ry="12" fill="#E0E0E0" stroke="#333" stroke-width="1.5" transform="rotate(160)"/>
+    </g>
+
+    <!-- Neck - elongated for pelican -->
+    <path d="M 30 -35 Q 50 -50 65 -75 Q 70 -85 70 -95 Q 68 -105 60 -108"
+          fill="#F5F5F5" stroke="#333" stroke-width="2"/>
+
+    <!-- Head -->
+    <ellipse cx="55" cy="-115" rx="40" ry="32" fill="#F5F5F5" stroke="#333" stroke-width="2"/>
+
+    <!-- Eye -->
+    <circle cx="70" cy="-120" r="6" fill="#333"/>
+    <circle cx="72" cy="-122" r="2" fill="#FFF"/>
+
+    <!-- Distinctive pelican beak with large pouch -->
+    <!-- Upper beak -->
+    <path d="M 85 -115 L 165 -120 Q 170 -120 170 -115 L 165 -110 Q 160 -108 150 -108 L 85 -105 Z"
+          fill="#FFA500" stroke="#333" stroke-width="2"/>
+
+    <!-- Lower beak with characteristic pouch -->
+    <path d="M 85 -105 L 150 -108 Q 160 -108 165 -110 Q 168 -105 168 -98 Q 165 -85 155 -75 Q 140 -70 120 -72 Q 100 -75 90 -85 Q 85 -95 85 -105 Z"
+          fill="#FFD700" stroke="#333" stroke-width="2"/>
+
+    <!-- Pouch detail/shading -->
+    <ellipse cx="125" cy="-88" rx="35" ry="15" fill="#FFE44D" opacity="0.5"/>
+
+    <!-- Wing reaching to handlebar -->
+    <path d="M 40 -15 Q 60 -25 80 -35 L 100 -55"
+          stroke="#E8E8E8" stroke-width="12" fill="none" stroke-linecap="round"/>
+    <path d="M 100 -55 L 90 -65 L 105 -60 L 110 -50 Z"
+          fill="#E8E8E8" stroke="#333" stroke-width="1.5"/>
+
+    <!-- Wing detail on near side -->
+    <ellipse cx="35" cy="5" rx="48" ry="25" fill="#D3D3D3" stroke="#333" stroke-width="2" transform="rotate(-15 35 5)"/>
+    <line x1="10" y1="0" x2="5" y2="15" stroke="#AAA" stroke-width="1"/>
+    <line x1="20" y1="3" x2="15" y2="18" stroke="#AAA" stroke-width="1"/>
+    <line x1="30" y1="5" x2="25" y2="20" stroke="#AAA" stroke-width="1"/>
+  </g>
+</svg>

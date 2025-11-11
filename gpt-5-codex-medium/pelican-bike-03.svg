@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="720" viewBox="0 0 960 720">
+  <defs>
+    <linearGradient id="bgSky03" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#7ec0f4"/>
+      <stop offset="55%" stop-color="#bfe2fd"/>
+      <stop offset="100%" stop-color="#fef8e4"/>
+    </linearGradient>
+    <linearGradient id="bgGround03" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#8fcf6c"/>
+      <stop offset="100%" stop-color="#6fa45c"/>
+    </linearGradient>
+    <radialGradient id="sun03" cx="0.85" cy="0.2" r="0.35">
+      <stop offset="0%" stop-color="#ffeaa7" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ffeaa7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="wheel03" cx="0.5" cy="0.5" r="0.75">
+      <stop offset="0%" stop-color="#efefef"/>
+      <stop offset="100%" stop-color="#232323"/>
+    </radialGradient>
+    <linearGradient id="beak03" x1="0" x2="1" y1="0.2" y2="0.8">
+      <stop offset="0%" stop-color="#f9b15d"/>
+      <stop offset="100%" stop-color="#f4862b"/>
+    </linearGradient>
+    <linearGradient id="pelican03" x1="0.32" x2="0.68" y1="0" y2="1">
+      <stop offset="0%" stop-color="#fffdf9"/>
+      <stop offset="65%" stop-color="#e5dfd5"/>
+      <stop offset="100%" stop-color="#cbc4ba"/>
+    </linearGradient>
+    <style>
+      .outline { stroke: #2b2b2b; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+      .bike { stroke: #1e4f80; stroke-width: 12; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .tire { fill: url(#wheel03); stroke: #161616; stroke-width: 7; }
+      .feather { fill: url(#pelican03); stroke: #c7c0b6; stroke-width: 3; }
+      .shadow { fill: #5f6f55; opacity: 0.32; }
+      .accent { fill: #f4a261; }
+    </style>
+  </defs>
+  <rect width="960" height="720" fill="url(#bgSky03)"/>
+  <circle cx="780" cy="120" r="160" fill="url(#sun03)"/>
+  <path d="M0 520 Q240 480 480 520 T960 540 V720 H0 Z" fill="url(#bgGround03)"/>
+  <path d="M120 520 Q180 488 230 502 T330 520" fill="none" stroke="#7cad60" stroke-width="16" stroke-linecap="round" opacity="0.4"/>
+  <path d="M600 520 Q660 500 710 510 T820 520" fill="none" stroke="#7cad60" stroke-width="16" stroke-linecap="round" opacity="0.4"/>
+  <ellipse cx="340" cy="560" rx="140" ry="34" class="shadow"/>
+  <ellipse cx="620" cy="580" rx="180" ry="40" class="shadow"/>
+
+  <g transform="translate(140 80)">
+    <g transform="translate(120 160)">
+      <circle class="tire" cx="210" cy="320" r="130"/>
+      <circle class="tire" cx="510" cy="320" r="130"/>
+      <g stroke="#1a1a1a" stroke-width="5" opacity="0.4">
+        <path d="M210 190 V450"/>
+        <path d="M330 320 H90"/>
+        <path d="M510 190 V450"/>
+        <path d="M390 320 H630"/>
+        <path d="M210 320 L510 320"/>
+        <path d="M150 260 L270 380"/>
+        <path d="M270 260 L150 380"/>
+        <path d="M450 260 L570 380"/>
+        <path d="M570 260 L450 380"/>
+      </g>
+      <path class="bike" d="M210 320 L350 200 L510 320 L350 320 Z"/>
+      <path class="bike" d="M350 320 L350 200 L450 110"/>
+      <path class="bike" d="M450 110 L540 120"/>
+      <path class="bike" d="M510 320 L610 220"/>
+      <circle cx="350" cy="320" r="22" fill="#3b3b3b"/>
+      <rect x="332" y="320" width="36" height="110" rx="14" fill="#202020"/>
+      <path d="M168 320 H260" stroke="#1f1f1f" stroke-width="18" stroke-linecap="round"/>
+      <path d="M468 320 H560" stroke="#1f1f1f" stroke-width="18" stroke-linecap="round"/>
+      <path d="M210 320 L170 230" stroke="#1f1f1f" stroke-width="10" stroke-linecap="round"/>
+      <path d="M510 320 L560 240" stroke="#1f1f1f" stroke-width="10" stroke-linecap="round"/>
+    </g>
+
+    <g transform="translate(220 20)">
+      <ellipse class="feather" cx="280" cy="240" rx="190" ry="140"/>
+      <ellipse class="feather" cx="178" cy="280" rx="100" ry="78" transform="rotate(-24 178 280)"/>
+      <ellipse class="feather" cx="382" cy="280" rx="100" ry="78" transform="rotate(24 382 280)"/>
+      <path class="feather" d="M250 130 Q280 60 350 70 Q398 78 420 150 Q360 138 330 200 Q302 260 260 220 Q220 180 216 140 Z"/>
+      <path class="feather" d="M210 230 Q190 340 216 380 Q230 400 262 380 Q294 360 298 330 Q250 320 230 260 Z" opacity="0.8"/>
+      <path fill="url(#beak03)" stroke="#d96f1a" stroke-width="5" d="M410 210 Q512 180 548 220 Q556 260 490 268 Q428 270 400 238 Z"/>
+      <path fill="url(#beak03)" stroke="#d96f1a" stroke-width="5" d="M516 220 Q600 244 588 280 Q574 310 510 294 Q464 286 450 260 Z"/>
+      <circle cx="400" cy="180" r="26" fill="#202020"/>
+      <circle cx="406" cy="176" r="10" fill="#ffffff" opacity="0.6"/>
+      <path d="M310 110 Q260 20 302 10 Q348 -2 400 42 Q412 80 380 108 Z" fill="#fdfaf1" stroke="#d5cec4" stroke-width="4"/>
+      <circle cx="320" cy="86" r="12" fill="#1f1f1f"/>
+      <path d="M210 360 Q170 390 190 430 Q220 480 282 460" stroke="#282828" stroke-width="16" stroke-linecap="round"/>
+      <path d="M430 360 Q470 390 452 430 Q430 470 370 450" stroke="#282828" stroke-width="16" stroke-linecap="round"/>
+      <path d="M262 384 Q310 420 366 420 Q420 420 454 396 Q470 448 424 486 Q350 540 270 500 Q222 474 210 428 Q208 402 226 380 Z" fill="#fbdc91" stroke="#ef9b39" stroke-width="4"/>
+      <path d="M214 330 Q240 428 220 514 Q204 556 166 556 Q140 556 120 528 Q96 498 110 456 Q140 388 188 330 Z" fill="#fdfaf1" stroke="#cfc6ba" stroke-width="4"/>
+      <path d="M460 330 Q508 400 576 420 Q606 430 632 412 Q648 384 620 348 Q586 310 520 302 Z" fill="#fdfaf1" stroke="#cfc6ba" stroke-width="4"/>
+      <path d="M190 300 Q140 300 128 352 Q120 388 140 418 Q174 460 210 444" fill="none" stroke="#282828" stroke-width="12" stroke-linecap="round"/>
+      <path d="M464 304 Q520 306 544 350 Q560 390 520 422 Q476 450 436 432" fill="none" stroke="#282828" stroke-width="12" stroke-linecap="round"/>
+      <path d="M276 262 Q304 280 332 280 Q360 280 388 262" fill="none" stroke="#bcb3a9" stroke-width="8" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <g fill="#fefefc" opacity="0.8">
+    <ellipse cx="160" cy="140" rx="80" ry="26"/>
+    <ellipse cx="240" cy="180" rx="60" ry="20"/>
+    <ellipse cx="320" cy="152" rx="48" ry="16"/>
+  </g>
+  <ellipse cx="480" cy="640" rx="260" ry="40" class="shadow" opacity="0.24"/>
+</svg>
