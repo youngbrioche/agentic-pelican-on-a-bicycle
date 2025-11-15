@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <linearGradient id="skyGradient" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#79b8ff"/>
+      <stop offset="60%" stop-color="#d7f3ff"/>
+      <stop offset="100%" stop-color="#fff9e6"/>
+    </linearGradient>
+    <linearGradient id="seaGradient" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5ec3e6"/>
+      <stop offset="100%" stop-color="#2a82c5"/>
+    </linearGradient>
+    <linearGradient id="groundGradient" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#4b5b52"/>
+      <stop offset="100%" stop-color="#303b34"/>
+    </linearGradient>
+    <linearGradient id="featherGradient" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#fffffb"/>
+      <stop offset="100%" stop-color="#cbc4bb"/>
+    </linearGradient>
+    <linearGradient id="beakGradient" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#ffb347"/>
+      <stop offset="100%" stop-color="#ff7e00"/>
+    </linearGradient>
+    <linearGradient id="wheelGradient" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#2a2a2a"/>
+      <stop offset="100%" stop-color="#111"/>
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="0.8" cy="0.2" r="0.3">
+      <stop offset="0%" stop-color="#ffe9a9" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ffe9a9" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softShadow" x="-0.1" y="-0.1" width="1.2" height="1.2">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="12" result="blur"/>
+      <feOffset dy="6" result="offset"/>
+      <feMerge>
+        <feMergeNode in="offset"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      .bike-frame { stroke: #173c63; stroke-width: 14; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .bike-detail { stroke: #111; stroke-width: 12; stroke-linecap: round; fill: none; }
+      .spoke { stroke: rgba(255,255,255,0.35); stroke-width: 4; }
+    </style>
+  </defs>
+  <rect width="1200" height="900" fill="url(#skyGradient)"/>
+  <circle cx="950" cy="150" r="180" fill="url(#sunGlow)"/>
+  <path d="M0 520 Q200 460 420 500 T840 500 T1200 460 V900 H0 Z" fill="url(#seaGradient)" opacity="0.65"/>
+  <path d="M0 640 Q160 600 320 640 T640 640 T960 600 T1200 630 V900 H0 Z" fill="#6db276"/>
+  <path d="M0 720 H1200 V900 H0 Z" fill="url(#groundGradient)"/>
+  <path d="M40 720 Q140 700 240 720" stroke="#869b8f" stroke-width="10" stroke-linecap="round" opacity="0.35"/>
+  <path d="M420 720 Q520 700 620 712" stroke="#869b8f" stroke-width="10" stroke-linecap="round" opacity="0.35"/>
+  <path d="M780 720 Q900 700 1040 714" stroke="#869b8f" stroke-width="10" stroke-linecap="round" opacity="0.35"/>
+
+  <g id="bike" transform="translate(160 140)">
+    <ellipse cx="360" cy="610" rx="180" ry="32" fill="#1c2320" opacity="0.35" filter="url(#softShadow)"/>
+    <ellipse cx="760" cy="618" rx="220" ry="38" fill="#1c2320" opacity="0.3" filter="url(#softShadow)"/>
+    <g>
+      <circle cx="320" cy="520" r="150" fill="url(#wheelGradient)" stroke="#050505" stroke-width="18"/>
+      <circle cx="760" cy="520" r="150" fill="url(#wheelGradient)" stroke="#050505" stroke-width="18"/>
+      <g class="spoke">
+        <line x1="320" y1="370" x2="320" y2="670"/>
+        <line x1="170" y1="520" x2="470" y2="520"/>
+        <line x1="220" y1="420" x2="420" y2="620"/>
+        <line x1="420" y1="420" x2="220" y2="620"/>
+        <line x1="760" y1="370" x2="760" y2="670"/>
+        <line x1="610" y1="520" x2="910" y2="520"/>
+        <line x1="660" y1="420" x2="860" y2="620"/>
+        <line x1="860" y1="420" x2="660" y2="620"/>
+      </g>
+      <path class="bike-frame" d="M320 520 L520 360 L760 520 L520 520 Z"/>
+      <path class="bike-frame" d="M520 360 L600 240"/>
+      <path class="bike-frame" d="M520 520 L650 420"/>
+      <path class="bike-frame" d="M600 240 L740 250"/>
+      <path class="bike-frame" d="M320 520 L250 420"/>
+      <circle cx="520" cy="520" r="26" fill="#0e1115" stroke="#20242a" stroke-width="10"/>
+      <path class="bike-detail" d="M480 520 H360"/>
+      <path class="bike-detail" d="M560 520 H700"/>
+      <path class="bike-detail" d="M700 240 L800 180" stroke-width="10"/>
+      <circle cx="800" cy="180" r="22" fill="#0c0c0c" stroke="#ececec" stroke-width="3"/>
+    </g>
+  </g>
+
+  <g id="pelican" transform="translate(250 80)">
+    <ellipse cx="420" cy="420" rx="220" ry="160" fill="url(#featherGradient)" stroke="#b5aca1" stroke-width="4"/>
+    <ellipse cx="540" cy="380" rx="120" ry="96" fill="url(#featherGradient)" stroke="#b5aca1" stroke-width="4"/>
+    <ellipse cx="300" cy="380" rx="120" ry="96" fill="url(#featherGradient)" stroke="#b5aca1" stroke-width="4"/>
+    <path d="M460 260 Q520 160 620 150 Q700 146 760 206 Q680 206 630 260 Q584 310 552 316" fill="url(#featherGradient)" stroke="#b5aca1" stroke-width="4"/>
+    <path d="M620 240 Q760 220 860 280 Q880 340 782 356 Q690 370 606 310" fill="url(#beakGradient)" stroke="#c16612" stroke-width="6"/>
+    <path d="M836 272 Q924 310 912 352 Q900 390 834 382 Q774 374 730 340" fill="url(#beakGradient)" stroke="#c16612" stroke-width="5"/>
+    <circle cx="640" cy="220" r="34" fill="#202020" stroke="#4d4d4d" stroke-width="4"/>
+    <circle cx="648" cy="214" r="12" fill="#fff" opacity="0.75"/>
+    <path d="M540 356 Q570 340 600 356" fill="none" stroke="#9b9187" stroke-width="8" stroke-linecap="round"/>
+    <path d="M528 400 Q568 386 598 392" fill="none" stroke="#c6bfb4" stroke-width="6" stroke-linecap="round"/>
+    <path d="M400 520 Q450 620 440 720 Q472 740 522 732 Q520 680 500 640" fill="#f4c05c" stroke="#c97818" stroke-width="6"/>
+    <path d="M520 520 Q580 640 640 700 Q676 732 716 714 Q744 700 740 666 Q672 602 590 520" fill="#f4c05c" stroke="#c97818" stroke-width="6"/>
+    <path d="M270 430 Q210 450 200 510 Q194 552 222 584 Q266 630 330 600" fill="none" stroke="#1c1c1c" stroke-width="18" stroke-linecap="round"/>
+    <path d="M566 430 Q640 430 692 476 Q720 508 706 548 Q680 606 610 584" fill="none" stroke="#1c1c1c" stroke-width="18" stroke-linecap="round"/>
+    <path d="M340 300 Q372 324 404 318 Q436 312 468 290" fill="none" stroke="#c9c2b8" stroke-width="7" stroke-linecap="round"/>
+    <path d="M360 340 Q392 358 426 354 Q460 350 494 332" fill="none" stroke="#dcd3c7" stroke-width="5" stroke-linecap="round"/>
+    <path d="M390 198 Q420 116 482 104 Q530 96 572 128 Q594 180 566 224 Q508 202 462 208 Q432 212 406 224" fill="#fffffb" stroke="#ccbfb3" stroke-width="4"/>
+    <path d="M420 180 Q456 144 500 140 Q548 136 580 154" fill="none" stroke="#9a9187" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="486" cy="160" r="16" fill="#1a1a1a"/>
+  </g>
+
+  <g opacity="0.4" stroke="#ffffff" stroke-linecap="round">
+    <path d="M160 220 Q220 200 280 220" stroke-width="6"/>
+    <path d="M320 180 Q420 150 520 174" stroke-width="8"/>
+    <path d="M720 200 Q780 180 840 198" stroke-width="6"/>
+  </g>
+</svg>

@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#a7d8ff"/>
+  <rect y="420" width="800" height="180" fill="#f3f1e6"/>
+
+  <!-- Sun -->
+  <circle cx="90" cy="90" r="45" fill="#ffd86b"/>
+
+  <!-- Road -->
+  <rect y="430" width="800" height="70" fill="#555555"/>
+  <rect y="465" width="800" height="5" fill="#f9f9f9" opacity="0.7"/>
+
+  <!-- Bicycle wheels -->
+  <g id="bike">
+    <g id="rear-wheel" transform="translate(280,430)">
+      <circle r="60" fill="#222222"/>
+      <circle r="50" fill="#f9f9f9"/>
+      <circle r="10" fill="#222222"/>
+      <g stroke="#888888" stroke-width="2">
+        <line x1="0" y1="-50" x2="0" y2="50"/>
+        <line x1="-50" y1="0" x2="50" y2="0"/>
+        <line x1="-35" y1="-35" x2="35" y2="35"/>
+        <line x1="-35" y1="35" x2="35" y2="-35"/>
+      </g>
+    </g>
+
+    <g id="front-wheel" transform="translate(470,430)">
+      <circle r="60" fill="#222222"/>
+      <circle r="50" fill="#f9f9f9"/>
+      <circle r="10" fill="#222222"/>
+      <g stroke="#888888" stroke-width="2">
+        <line x1="0" y1="-50" x2="0" y2="50"/>
+        <line x1="-50" y1="0" x2="50" y2="0"/>
+        <line x1="-35" y1="-35" x2="35" y2="35"/>
+        <line x1="-35" y1="35" x2="35" y2="-35"/>
+      </g>
+    </g>
+
+    <!-- Frame -->
+    <g stroke="#1d5c8c" stroke-width="10" fill="none">
+      <line x1="280" y1="430" x2="350" y2="360"/>
+      <line x1="350" y1="360" x2="420" y2="430"/>
+      <line x1="280" y1="430" x2="420" y2="430"/>
+      <line x1="350" y1="360" x2="350" y2="310"/>
+      <line x1="420" y1="430" x2="470" y2="360"/>
+    </g>
+
+    <!-- Handlebars -->
+    <g stroke="#1d5c8c" stroke-width="8" fill="none">
+      <line x1="470" y1="360" x2="510" y2="320"/>
+      <line x1="510" y1="320" x2="530" y2="320"/>
+    </g>
+
+    <!-- Seat -->
+    <g stroke="#1d5c8c" stroke-width="8" fill="none">
+      <line x1="350" y1="310" x2="350" y2="280"/>
+      <line x1="330" y1="280" x2="370" y2="280"/>
+    </g>
+
+    <!-- Pedals -->
+    <g transform="translate(350,430)">
+      <circle r="15" fill="#222222"/>
+      <g stroke="#222222" stroke-width="6">
+        <line x1="-25" y1="-25" x2="-45" y2="-45"/>
+        <line x1="25" y1="25" x2="45" y2="45"/>
+      </g>
+      <g fill="#222222">
+        <rect x="-50" y="-50" width="20" height="10" rx="3"/>
+        <rect x="30" y="40" width="20" height="10" rx="3"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Pelican body -->
+  <g id="pelican" transform="translate(320,220)">
+    <!-- Body -->
+    <ellipse cx="0" cy="70" rx="70" ry="55" fill="#f5f5f7" stroke="#c9c9cf" stroke-width="3"/>
+
+    <!-- Wing -->
+    <path d="M -50 70 C -80 40 -80 15 -40 5 C 10 -8 35 15 25 45 C 15 75 -10 90 -40 85 Z"
+          fill="#e2e3e9" stroke="#c0c2cc" stroke-width="3"/>
+
+    <!-- Neck -->
+    <path d="M -5 40 C -5 10 10 -5 35 -10 C 60 -15 90 0 95 25"
+          fill="none" stroke="#f5f5f7" stroke-width="20" stroke-linecap="round"/>
+    <path d="M -5 40 C -5 10 10 -5 35 -10 C 60 -15 90 0 95 25"
+          fill="none" stroke="#c9c9cf" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Head -->
+    <ellipse cx="100" cy="20" rx="32" ry="28" fill="#f5f5f7" stroke="#c9c9cf" stroke-width="3"/>
+
+    <!-- Eye -->
+    <circle cx="108" cy="15" r="5" fill="#222222"/>
+    <circle cx="106" cy="13" r="1.5" fill="#ffffff"/>
+
+    <!-- Beak -->
+    <path d="M 115 22 L 170 28 L 170 36 L 115 32 Z" fill="#f6a623" stroke="#d38310" stroke-width="3"/>
+    <path d="M 115 22 C 138 18 150 18 168 20 C 172 22 172 30 168 32 C 150 34 138 34 115 32 Z"
+          fill="#f9b94c" opacity="0.85"/>
+
+    <!-- Beak pouch -->
+    <path d="M 115 28 C 135 45 148 50 168 46 C 170 38 170 34 168 32 C 150 34 138 34 115 32 Z"
+          fill="#f2c46b" opacity="0.9"/>
+
+    <!-- Back feathers -->
+    <path d="M -65 65 C -90 95 -80 125 -50 135"
+          fill="none" stroke="#d2d3db" stroke-width="6" stroke-linecap="round"/>
+    <path d="M -55 80 C -80 105 -70 130 -40 138"
+          fill="none" stroke="#d2d3db" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Tail -->
+    <path d="M -70 70 L -105 60 L -115 80 L -75 90 Z"
+          fill="#e2e3e9" stroke="#c0c2cc" stroke-width="3"/>
+
+    <!-- Legs -->
+    <g stroke="#e69b23" stroke-width="8" stroke-linecap="round" fill="none">
+      <path d="M -10 110 L 5 150 L 35 160"/>
+      <path d="M 10 110 L 20 145 L 55 155"/>
+    </g>
+
+    <!-- Feet on pedals -->
+    <g fill="#f4a629" stroke="#d38310" stroke-width="2">
+      <path d="M 28 157 L 48 157 L 52 165 L 30 165 Z"/>
+      <path d="M 18 162 L 36 168 L 34 176 L 14 170 Z"/>
+    </g>
+
+    <!-- Simple handlebar grip wings -->
+    <g stroke="#f5f5f7" stroke-width="10" stroke-linecap="round">
+      <line x1="40" y1="65" x2="95" y2="60"/>
+    </g>
+  </g>
+</svg>
