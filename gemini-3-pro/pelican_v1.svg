@@ -1,0 +1,56 @@
+<svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#e0f7fa"/>
+  <rect y="400" width="100%" height="100" fill="#a1887f"/>
+
+  <!-- Bicycle -->
+  <g transform="translate(100, 250)">
+    <!-- Wheels -->
+    <circle cx="50" cy="150" r="45" fill="none" stroke="#333" stroke-width="5"/>
+    <circle cx="250" cy="150" r="45" fill="none" stroke="#333" stroke-width="5"/>
+    <!-- Spokes (simplified) -->
+    <path d="M50 150 L50 105 M50 150 L95 150 M50 150 L50 195 M50 150 L5 150" stroke="#888" stroke-width="2"/>
+    <path d="M250 150 L250 105 M250 150 L295 150 M250 150 L250 195 M250 150 L205 150" stroke="#888" stroke-width="2"/>
+
+    <!-- Frame -->
+    <path d="M50 150 L120 50 L200 150 L120 150 Z" fill="none" stroke="#d32f2f" stroke-width="5" stroke-linejoin="round"/> <!-- Main triangle -->
+    <path d="M120 50 L230 50" stroke="#d32f2f" stroke-width="5"/> <!-- Top tube extension -->
+    <path d="M50 150 L120 50" stroke="#d32f2f" stroke-width="5"/> <!-- Fork/Front tube -->
+    <path d="M250 150 L230 50" stroke="#d32f2f" stroke-width="5"/> <!-- Rear stays -->
+
+    <!-- Handlebars -->
+    <path d="M230 50 L230 20 L260 30" fill="none" stroke="#333" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Seat -->
+    <path d="M120 50 L120 30" stroke="#333" stroke-width="5"/>
+    <rect x="105" y="25" width="30" height="10" rx="5" fill="#333"/>
+  </g>
+
+  <!-- Pelican -->
+  <g transform="translate(180, 200)">
+    <!-- Back Leg (Pedaling) -->
+    <path d="M40 80 L40 150 L60 160" fill="none" stroke="#ff9800" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- Body -->
+    <ellipse cx="50" cy="70" rx="40" ry="30" fill="#fff" stroke="#ccc" stroke-width="1"/>
+
+    <!-- Wing -->
+    <path d="M40 60 Q-10 20 10 80" fill="#fff" stroke="#ccc" stroke-width="2"/>
+
+    <!-- Neck -->
+    <path d="M80 50 Q100 30 100 10" fill="none" stroke="#fff" stroke-width="15" stroke-linecap="round"/>
+
+    <!-- Head -->
+    <circle cx="100" cy="10" r="12" fill="#fff"/>
+
+    <!-- Beak -->
+    <path d="M110 5 L160 5 L155 20 Q130 30 110 20 Z" fill="#ffcc80" stroke="#ff9800" stroke-width="1"/>
+
+    <!-- Eye -->
+    <circle cx="105" cy="8" r="2" fill="#000"/>
+
+    <!-- Front Leg (Holding handlebar, actually pelicans don't have arms, so legs on pedals, maybe wing on handlebar?) -->
+    <!-- Let's put the other leg on the pedal area -->
+    <path d="M50 80 L70 130 L90 140" fill="none" stroke="#ff9800" stroke-width="6" stroke-linecap="round"/>
+  </g>
+</svg>

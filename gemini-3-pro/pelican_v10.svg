@@ -1,0 +1,171 @@
+<svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4FC3F7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E1F5FE;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="roadGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#616161;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#424242;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="sunGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#FFF176;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FDD835;stop-opacity:1" />
+    </radialGradient>
+    <!-- Texture for asphalt -->
+    <filter id="noise">
+        <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#skyGradient)"/>
+
+  <!-- Sun -->
+  <circle cx="450" cy="60" r="35" fill="url(#sunGradient)"/>
+  <circle cx="450" cy="60" r="45" fill="none" stroke="#FDD835" stroke-width="2" opacity="0.5"/>
+
+  <!-- Clouds -->
+  <g fill="#FFF" opacity="0.9">
+      <path d="M80 80 Q100 60 120 80 T160 80 T190 80" stroke="white" stroke-width="20" stroke-linecap="round" fill="none"/>
+      <path d="M330 110 Q350 90 370 110 T410 110" stroke="white" stroke-width="18" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Distant Landscape -->
+  <path d="M0 350 Q100 300 200 350 T400 330 L500 380 V500 H0 Z" fill="#AED581"/>
+  <path d="M0 380 Q150 360 300 400 T500 380 V500 H0 Z" fill="#8BC34A"/>
+
+  <!-- Road -->
+  <rect y="420" width="100%" height="80" fill="url(#roadGradient)"/>
+  <rect y="420" width="100%" height="80" fill="#000" opacity="0.1" filter="url(#noise)"/>
+  <line x1="0" y1="460" x2="500" y2="460" stroke="#EEEEEE" stroke-width="4" stroke-dasharray="40,40"/>
+
+  <!-- Bicycle Group -->
+  <g transform="translate(0, -30)">
+    <!-- Shadow -->
+    <ellipse cx="260" cy="455" rx="140" ry="12" fill="#000" opacity="0.3"/>
+
+    <!-- Back Wheel -->
+    <g transform="translate(140, 390)">
+        <circle r="60" fill="none" stroke="#333" stroke-width="10"/>
+        <circle r="55" fill="none" stroke="#CFD8DC" stroke-width="4"/>
+        <!-- Spinning Spokes blur effect -->
+        <circle r="50" fill="none" stroke="#B0BEC5" stroke-width="1" opacity="0.5"/>
+        <g stroke="#B0BEC5" stroke-width="1.5">
+            <line x1="0" y1="-55" x2="0" y2="55"/>
+            <line x1="-55" y1="0" x2="55" y2="0"/>
+            <line x1="-39" y1="-39" x2="39" y2="39"/>
+            <line x1="39" y1="-39" x2="-39" y2="39"/>
+        </g>
+        <circle r="5" fill="#555"/>
+    </g>
+
+    <!-- Front Wheel -->
+    <g transform="translate(380, 390)">
+        <circle r="60" fill="none" stroke="#333" stroke-width="10"/>
+        <circle r="55" fill="none" stroke="#CFD8DC" stroke-width="4"/>
+        <!-- Spinning Spokes blur effect -->
+        <circle r="50" fill="none" stroke="#B0BEC5" stroke-width="1" opacity="0.5"/>
+        <g stroke="#B0BEC5" stroke-width="1.5">
+            <line x1="0" y1="-55" x2="0" y2="55"/>
+            <line x1="-55" y1="0" x2="55" y2="0"/>
+            <line x1="-39" y1="-39" x2="39" y2="39"/>
+            <line x1="39" y1="-39" x2="-39" y2="39"/>
+        </g>
+        <circle r="5" fill="#555"/>
+    </g>
+
+    <!-- Frame -->
+    <path d="M140 390 L240 390 L205 260 L140 390" fill="none" stroke="#D32F2F" stroke-width="9" stroke-linejoin="round"/>
+    <path d="M240 390 L340 240 L205 260 L240 390" fill="none" stroke="#D32F2F" stroke-width="9" stroke-linejoin="round"/>
+    <path d="M380 390 L340 240" stroke="#D32F2F" stroke-width="9" stroke-linecap="round"/>
+
+    <!-- Handlebars -->
+    <path d="M340 240 L340 210 L320 210" fill="none" stroke="#212121" stroke-width="7" stroke-linecap="round"/>
+    <path d="M320 210 L300 220" fill="none" stroke="#212121" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="300" cy="220" r="5" fill="#000"/>
+
+    <!-- Seat -->
+    <path d="M205 260 L200 230" stroke="#212121" stroke-width="8"/>
+    <path d="M175 230 L225 230 Q230 230 225 245 L180 245 Z" fill="#212121"/>
+
+    <!-- Crankset -->
+    <circle cx="240" cy="390" r="18" fill="#333"/>
+    <circle cx="240" cy="390" r="14" fill="none" stroke="#777" stroke-width="2" stroke-dasharray="4,4"/>
+
+    <!-- Chain -->
+    <path d="M140 390 L240 390" stroke="#555" stroke-width="4" stroke-dasharray="2,2"/>
+  </g>
+
+  <!-- Pelican -->
+  <g transform="translate(0, -30)">
+     <!-- Left Leg (Behind) -->
+    <path d="M220 290 Q210 340 225 360 L215 350" fill="none" stroke="#F57C00" stroke-width="11" stroke-linecap="round"/>
+    <line x1="240" y1="390" x2="225" y2="350" stroke="#555" stroke-width="7"/>
+    <rect x="215" y="345" width="20" height="8" fill="#222" transform="rotate(-20 225 350)"/>
+
+    <!-- Right Leg (Front) -->
+    <path d="M220 290 Q250 340 260 430" fill="none" stroke="#FF9800" stroke-width="12" stroke-linecap="round"/>
+    <path d="M260 430 L280 435 L270 445 Z" fill="#FF9800"/>
+    <line x1="240" y1="390" x2="260" y2="430" stroke="#555" stroke-width="7"/>
+    <rect x="250" y="425" width="20" height="10" fill="#222" transform="rotate(20 260 430)"/>
+
+    <!-- Body -->
+    <ellipse cx="200" cy="280" rx="65" ry="50" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+    <ellipse cx="200" cy="275" rx="55" ry="40" fill="#FFFFFF"/> <!-- Highlight -->
+
+    <!-- Tail -->
+    <path d="M135 280 L110 260 L115 280 L110 300 Z" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+
+    <!-- Neck -->
+    <path d="M245 250 C280 240 290 190 270 150" fill="none" stroke="#FFF" stroke-width="26" stroke-linecap="round"/>
+
+    <!-- Wing (Reaching for bar) -->
+    <path d="M220 260 Q260 270 300 220 L305 215 L295 210 Q250 250 220 240 Z" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+    <!-- Wing feathers texture -->
+    <path d="M230 250 Q260 255 280 230" fill="none" stroke="#E0E0E0" stroke-width="1"/>
+    <path d="M180 260 Q200 270 220 260" fill="none" stroke="#E0E0E0" stroke-width="2"/>
+
+    <!-- Head -->
+    <circle cx="270" cy="140" r="24" fill="#FFF"/>
+
+    <!-- Helmet -->
+    <g transform="translate(270, 140) rotate(-5) translate(-270, -140)">
+        <!-- Main shell -->
+        <path d="M240 130 C240 100 260 95 290 105 C300 110 305 130 300 130 Z" fill="#D32F2F" stroke="#B71C1C" stroke-width="1"/>
+        <!-- Vents -->
+        <path d="M255 110 Q270 105 285 115" fill="none" stroke="#B71C1C" stroke-width="3" stroke-linecap="round"/>
+        <path d="M260 120 Q275 115 285 123" fill="none" stroke="#B71C1C" stroke-width="3" stroke-linecap="round"/>
+        <!-- Strap - adjusted to go around eye properly -->
+        <path d="M250 130 L265 160 L285 130" fill="none" stroke="#333" stroke-width="2" opacity="0.8"/>
+    </g>
+
+    <!-- Eye -->
+    <circle cx="275" cy="135" r="4" fill="#000"/>
+    <circle cx="277" cy="133" r="1.5" fill="#FFF"/>
+
+    <!-- Beak -->
+    <g>
+        <!-- Upper -->
+        <path d="M290 130 L380 130 L375 140 L290 140" fill="#FFCC80" stroke="#F57C00" stroke-width="1"/>
+        <!-- Hook -->
+        <path d="M380 130 L385 135 L380 140 Z" fill="#E65100"/>
+        <!-- Pouch -->
+        <path d="M290 140 L375 140 Q360 190 290 170 Q280 160 290 140" fill="#FFB74D" stroke="#F57C00" stroke-width="1"/>
+        <!-- Smile/Mouth line -->
+        <path d="M290 140 L360 140" stroke="#E65100" stroke-width="1"/>
+    </g>
+
+    <!-- Motion lines (Fixed) -->
+    <g stroke="#FFF" stroke-width="3" opacity="0.6" stroke-linecap="round">
+        <!-- Behind back wheel/body -->
+        <line x1="120" y1="320" x2="60" y2="320" />
+        <line x1="100" y1="350" x2="50" y2="350" />
+        <line x1="130" y1="290" x2="80" y2="290" opacity="0.4"/>
+
+        <!-- Ground streaks behind -->
+        <line x1="140" y1="400" x2="90" y2="400"/>
+        <line x1="160" y1="415" x2="100" y2="415" stroke-width="4"/>
+    </g>
+  </g>
+</svg>

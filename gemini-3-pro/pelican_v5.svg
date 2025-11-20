@@ -1,0 +1,150 @@
+<svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#29B6F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B3E5FC;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="roadGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#757575;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#616161;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="2" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.5"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#skyGradient)"/>
+
+  <!-- Clouds -->
+  <path d="M50 100 Q70 80 90 100 T130 100 T160 100" fill="none" stroke="white" stroke-width="15" stroke-linecap="round" opacity="0.8"/>
+  <path d="M350 80 Q380 50 410 80 T460 80" fill="none" stroke="white" stroke-width="20" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- Hills -->
+  <path d="M0 380 Q150 320 300 380 T500 360 V500 H0 Z" fill="#7CB342"/>
+  <path d="M0 400 Q200 440 500 400 V500 H0 Z" fill="#558B2F"/>
+
+  <!-- Road -->
+  <rect y="430" width="100%" height="70" fill="url(#roadGradient)"/>
+  <line x1="0" y1="465" x2="500" y2="465" stroke="#E0E0E0" stroke-width="4" stroke-dasharray="30,30"/>
+
+  <!-- Shadow under bike -->
+  <ellipse cx="260" cy="445" rx="140" ry="10" fill="#000" opacity="0.2"/>
+
+  <!-- Bicycle -->
+  <g transform="translate(0, -25)">
+    <!-- Tires -->
+    <g fill="none" stroke="#212121" stroke-width="8">
+      <circle cx="140" cy="380" r="60"/>
+      <circle cx="380" cy="380" r="60"/>
+    </g>
+    <!-- Rims -->
+    <g fill="none" stroke="#CFD8DC" stroke-width="4">
+      <circle cx="140" cy="380" r="56"/>
+      <circle cx="380" cy="380" r="56"/>
+    </g>
+    <!-- Spokes -->
+    <g stroke="#B0BEC5" stroke-width="1">
+      <!-- Rear -->
+      <line x1="140" y1="380" x2="140" y2="324"/> <line x1="140" y1="380" x2="140" y2="436"/>
+      <line x1="140" y1="380" x2="196" y2="380"/> <line x1="140" y1="380" x2="84" y2="380"/>
+      <line x1="140" y1="380" x2="180" y2="340"/> <line x1="140" y1="380" x2="100" y2="420"/>
+      <line x1="140" y1="380" x2="180" y2="420"/> <line x1="140" y1="380" x2="100" y2="340"/>
+      <!-- Front -->
+      <line x1="380" y1="380" x2="380" y2="324"/> <line x1="380" y1="380" x2="380" y2="436"/>
+      <line x1="380" y1="380" x2="436" y2="380"/> <line x1="380" y1="380" x2="324" y2="380"/>
+      <line x1="380" y1="380" x2="420" y2="340"/> <line x1="380" y1="380" x2="340" y2="420"/>
+      <line x1="380" y1="380" x2="420" y2="420"/> <line x1="380" y1="380" x2="340" y2="340"/>
+    </g>
+
+    <!-- Frame (Red) -->
+    <path d="M140 380 L240 380 L210 250 L140 380" fill="none" stroke="#D32F2F" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M240 380 L340 230 L210 250 L240 380" fill="none" stroke="#D32F2F" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M380 380 L340 230" stroke="#D32F2F" stroke-width="8" stroke-linecap="round"/> <!-- Fork -->
+
+    <!-- Handlebar -->
+    <path d="M340 230 L340 200 L320 200" fill="none" stroke="#212121" stroke-width="6" stroke-linecap="round"/>
+    <path d="M340 200 L370 190" fill="none" stroke="#212121" stroke-width="6" stroke-linecap="round"/> <!-- Brake lever/grip area -->
+
+    <!-- Seat -->
+    <path d="M210 250 L205 220" stroke="#212121" stroke-width="6"/>
+    <path d="M180 220 L225 220 Q230 220 225 230 L185 230 Z" fill="#212121"/>
+
+    <!-- Crankset -->
+    <circle cx="240" cy="380" r="18" fill="#333"/>
+    <circle cx="240" cy="380" r="12" fill="#555" stroke="#333" stroke-width="2"/>
+
+    <!-- Chain -->
+    <path d="M140 380 L240 380" stroke="#555" stroke-width="3" stroke-dasharray="3,3"/>
+  </g>
+
+  <!-- Pelican -->
+  <g transform="translate(0, -25)">
+
+    <!-- Left Leg (Background) -->
+    <path d="M220 280 Q210 330 225 370" fill="none" stroke="#E65100" stroke-width="10" stroke-linecap="round" opacity="0.8"/>
+    <!-- Left Pedal (Up) -->
+    <line x1="240" y1="380" x2="225" y2="340" stroke="#555" stroke-width="6"/>
+    <rect x="215" y="335" width="20" height="8" fill="#212121" transform="rotate(-20 225 340)"/>
+
+
+    <!-- Right Leg (Foreground) -->
+    <path d="M220 280 Q250 330 260 420" fill="none" stroke="#FF9800" stroke-width="11" stroke-linecap="round"/>
+    <!-- Webbed Foot -->
+    <path d="M260 420 L280 425 L265 435 Z" fill="#FF9800"/>
+
+    <!-- Right Pedal (Down) -->
+    <line x1="240" y1="380" x2="260" y2="425" stroke="#555" stroke-width="6"/>
+    <rect x="250" y="420" width="20" height="10" fill="#212121" transform="rotate(20 260 425)"/>
+
+
+    <!-- Body -->
+    <ellipse cx="200" cy="270" rx="65" ry="50" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1"/>
+
+    <!-- Tail feathers -->
+    <path d="M135 270 L110 250 L115 270 L110 290 Z" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1"/>
+
+    <!-- Wing (Reaching) -->
+    <!-- Improved wing shape -->
+    <path d="M240 260 C280 260 330 230 360 190" fill="none" stroke="#FFFFFF" stroke-width="28" stroke-linecap="round"/>
+    <!-- Feathers at tip holding bar -->
+    <g fill="#FFFFFF">
+        <ellipse cx="360" cy="190" rx="10" ry="15" transform="rotate(-45 360 190)"/>
+        <ellipse cx="365" cy="195" rx="8" ry="12" transform="rotate(-30 365 195)"/>
+    </g>
+
+    <!-- Neck -->
+    <path d="M250 230 C280 220 280 170 265 140" fill="none" stroke="#FFFFFF" stroke-width="24" stroke-linecap="round"/>
+
+    <!-- Head -->
+    <circle cx="265" cy="130" r="22" fill="#FFFFFF"/>
+
+    <!-- Eye -->
+    <circle cx="265" cy="125" r="3.5" fill="#000"/>
+    <circle cx="266" cy="124" r="1" fill="#FFF"/>
+
+    <!-- Beak Structure -->
+    <!-- Upper mandible -->
+    <path d="M275 120 L370 120 L365 130 L285 130" fill="#FFB74D" stroke="#EF6C00" stroke-width="1"/>
+    <line x1="280" y1="125" x2="365" y2="125" stroke="#EF6C00" stroke-width="0.5"/>
+
+    <!-- Pouch (Lower mandible) -->
+    <path d="M285 130 L365 130 Q340 180 285 160 Q270 150 285 130" fill="#FFCC80" stroke="#EF6C00" stroke-width="1"/>
+
+    <!-- Beak Tip Hook -->
+    <path d="M370 120 L375 125 L370 130 Z" fill="#EF6C00"/>
+
+    <!-- Folded Wing Details on Body -->
+    <path d="M170 260 Q210 260 230 290" fill="none" stroke="#EEEEEE" stroke-width="3"/>
+    <path d="M160 270 Q200 270 220 300" fill="none" stroke="#EEEEEE" stroke-width="3"/>
+
+  </g>
+</svg>

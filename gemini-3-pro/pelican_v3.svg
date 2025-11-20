@@ -1,0 +1,121 @@
+<svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E0F7FA;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#skyGradient)"/>
+  <rect y="400" width="100%" height="100" fill="#7CB342"/> <!-- Grass Green -->
+
+  <!-- Ground details -->
+  <g stroke="#558B2F" stroke-width="2" fill="none">
+    <path d="M50 420 l5 -10 l5 10"/>
+    <path d="M120 440 l5 -12 l5 12"/>
+    <path d="M400 410 l5 -10 l5 10"/>
+  </g>
+
+  <!-- Sun -->
+  <circle cx="420" cy="60" r="35" fill="#FFEB3B" stroke="#FBC02D" stroke-width="2"/>
+
+  <!-- Bicycle Group -->
+  <g transform="translate(0, -30)">
+    <!-- Wheels -->
+    <g stroke="#333" stroke-width="4" fill="none">
+        <circle cx="130" cy="400" r="55" fill="#eee" fill-opacity="0.5"/> <!-- Rear -->
+        <circle cx="370" cy="400" r="55" fill="#eee" fill-opacity="0.5"/> <!-- Front -->
+    </g>
+
+    <!-- Spokes -->
+    <g stroke="#bbb" stroke-width="1.5">
+         <!-- Rear Spokes -->
+        <line x1="130" y1="400" x2="130" y2="345" />
+        <line x1="130" y1="400" x2="130" y2="455" />
+        <line x1="130" y1="400" x2="185" y2="400" />
+        <line x1="130" y1="400" x2="75" y2="400" />
+        <line x1="130" y1="400" x2="169" y2="361" />
+        <line x1="130" y1="400" x2="91" y2="439" />
+        <line x1="130" y1="400" x2="91" y2="361" />
+        <line x1="130" y1="400" x2="169" y2="439" />
+
+        <!-- Front Spokes -->
+        <line x1="370" y1="400" x2="370" y2="345" />
+        <line x1="370" y1="400" x2="370" y2="455" />
+        <line x1="370" y1="400" x2="425" y2="400" />
+        <line x1="370" y1="400" x2="315" y2="400" />
+        <line x1="370" y1="400" x2="409" y2="361" />
+        <line x1="370" y1="400" x2="331" y2="439" />
+        <line x1="370" y1="400" x2="331" y2="361" />
+        <line x1="370" y1="400" x2="409" y2="439" />
+    </g>
+
+    <!-- Frame -->
+    <!-- Crank center at 230, 400 -->
+    <!-- Seat post top at 200, 270 -->
+    <!-- Handlebar stem top at 330, 250 -->
+    <path d="M130 400 L230 400 L200 270 L130 400" fill="none" stroke="#D32F2F" stroke-width="7" stroke-linejoin="round"/> <!-- Rear Triangle -->
+    <path d="M230 400 L330 250 L200 270 L230 400" fill="none" stroke="#D32F2F" stroke-width="7" stroke-linejoin="round"/> <!-- Front Triangle -->
+    <path d="M370 400 L330 250" fill="none" stroke="#D32F2F" stroke-width="7" stroke-linecap="round"/> <!-- Fork -->
+
+    <!-- Handlebars -->
+    <path d="M330 250 L330 230 L360 230" fill="none" stroke="#212121" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="360" cy="230" r="4" fill="#212121"/> <!-- Grip -->
+
+    <!-- Seat -->
+    <path d="M200 270 L195 250" stroke="#212121" stroke-width="6"/>
+    <path d="M175 250 L215 250 Q220 250 215 260 L180 260 Z" fill="#212121"/>
+
+    <!-- Chain -->
+    <path d="M130 400 L230 400" stroke="#555" stroke-width="2" stroke-dasharray="4,2"/>
+
+    <!-- Crank & Pedal -->
+    <circle cx="230" cy="400" r="12" fill="#444"/>
+    <!-- Right pedal (down) -->
+    <line x1="230" y1="400" x2="245" y2="435" stroke="#555" stroke-width="5"/>
+    <rect x="235" y="430" width="20" height="8" fill="#111" transform="rotate(10 245 435)"/>
+  </g>
+
+  <!-- Pelican -->
+  <g transform="translate(0, -30)">
+    <!-- Right Leg (on pedal) -->
+    <path d="M210 300 Q240 340 245 435" fill="none" stroke="#FFA726" stroke-width="9" stroke-linecap="round"/>
+    <!-- Foot on pedal -->
+    <path d="M235 435 L260 435" stroke="#FFA726" stroke-width="9" stroke-linecap="round"/>
+
+    <!-- Body -->
+    <!-- Main body ellipse -->
+    <ellipse cx="200" cy="280" rx="55" ry="40" fill="#FFFFFF" stroke="#ddd" stroke-width="1"/>
+
+    <!-- Tail -->
+    <path d="M150 280 L130 290 L150 300" fill="#FFFFFF" stroke="#ddd" stroke-width="1"/>
+
+    <!-- Wing (folded against body but slightly visible) -->
+    <path d="M180 270 Q220 260 240 290 Q210 310 180 290 Z" fill="#F5F5F5" stroke="#ccc" stroke-width="1"/>
+
+    <!-- Neck -->
+    <!-- Curving S shape -->
+    <path d="M230 260 C260 250 260 220 250 190" fill="none" stroke="#FFFFFF" stroke-width="24" stroke-linecap="round"/>
+
+    <!-- Head -->
+    <circle cx="250" cy="180" r="20" fill="#FFFFFF"/>
+
+    <!-- Eye -->
+    <circle cx="250" cy="175" r="3" fill="#000"/>
+    <circle cx="251" cy="174" r="1" fill="#fff"/> <!-- Glint -->
+
+    <!-- Beak (Upper) -->
+    <path d="M265 175 L320 175 L315 185 L265 185" fill="#FFCC80" stroke="#FFA726" stroke-width="1"/>
+
+    <!-- Beak (Lower Pouch) -->
+    <path d="M265 185 L315 185 Q300 215 265 200 Z" fill="#FFB74D" stroke="#FFA726" stroke-width="1"/>
+    <line x1="265" y1="185" x2="315" y2="185" stroke="#FFA726" stroke-width="1"/>
+
+    <!-- Wing/Arm reaching for handlebar? -->
+    <!-- Let's imply the wing is controlling the bike or just balancing.
+         Maybe a secondary wing shape reaching forward -->
+    <path d="M230 270 Q280 260 340 230" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/> <!-- Wing reaching -->
+    <path d="M340 230 L360 230" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/> <!-- "Hand" part -->
+
+  </g>
+</svg>

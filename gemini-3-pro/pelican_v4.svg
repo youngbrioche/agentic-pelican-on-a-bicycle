@@ -1,0 +1,112 @@
+<svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4FC3F7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E1F5FE;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="roadGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#9E9E9E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#757575;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#skyGradient)"/>
+
+  <!-- Hills -->
+  <path d="M0 400 Q150 350 300 400 T500 380 V500 H0 Z" fill="#8BC34A"/>
+  <path d="M0 420 Q200 450 500 420 V500 H0 Z" fill="#689F38"/>
+
+  <!-- Road -->
+  <rect y="430" width="100%" height="70" fill="url(#roadGradient)"/>
+  <line x1="0" y1="465" x2="500" y2="465" stroke="#BDBDBD" stroke-width="4" stroke-dasharray="20,20"/>
+
+  <!-- Sun -->
+  <circle cx="450" cy="60" r="40" fill="#FFEB3B"/>
+
+  <!-- Bicycle -->
+  <g transform="translate(0, -20)">
+    <!-- Tires -->
+    <g fill="none" stroke="#333" stroke-width="8">
+      <circle cx="140" cy="380" r="60"/>
+      <circle cx="380" cy="380" r="60"/>
+    </g>
+    <!-- Rims -->
+    <g fill="none" stroke="#DDD" stroke-width="4">
+      <circle cx="140" cy="380" r="56"/>
+      <circle cx="380" cy="380" r="56"/>
+    </g>
+    <!-- Spokes -->
+    <g stroke="#CCC" stroke-width="1">
+      <line x1="140" y1="380" x2="140" y2="324"/> <line x1="140" y1="380" x2="140" y2="436"/>
+      <line x1="140" y1="380" x2="196" y2="380"/> <line x1="140" y1="380" x2="84" y2="380"/>
+      <line x1="140" y1="380" x2="180" y2="340"/> <line x1="140" y1="380" x2="100" y2="420"/>
+      <line x1="140" y1="380" x2="180" y2="420"/> <line x1="140" y1="380" x2="100" y2="340"/>
+
+      <line x1="380" y1="380" x2="380" y2="324"/> <line x1="380" y1="380" x2="380" y2="436"/>
+      <line x1="380" y1="380" x2="436" y2="380"/> <line x1="380" y1="380" x2="324" y2="380"/>
+      <line x1="380" y1="380" x2="420" y2="340"/> <line x1="380" y1="380" x2="340" y2="420"/>
+      <line x1="380" y1="380" x2="420" y2="420"/> <line x1="380" y1="380" x2="340" y2="340"/>
+    </g>
+
+    <!-- Frame (Red) -->
+    <path d="M140 380 L240 380 L210 250 L140 380" fill="none" stroke="#D32F2F" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M240 380 L340 230 L210 250 L240 380" fill="none" stroke="#D32F2F" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M380 380 L340 230" stroke="#D32F2F" stroke-width="8" stroke-linecap="round"/>
+
+    <!-- Handlebar -->
+    <path d="M335 230 L335 210 L360 200" fill="none" stroke="#212121" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- Seat -->
+    <path d="M210 250 L205 230" stroke="#212121" stroke-width="6"/>
+    <path d="M185 230 L225 230 Q230 230 225 240 L190 240 Z" fill="#212121"/>
+
+    <!-- Crankset -->
+    <circle cx="240" cy="380" r="15" fill="#444"/>
+    <circle cx="240" cy="380" r="5" fill="#CCC"/>
+
+    <!-- Pedal Arm (Right) -->
+    <line x1="240" y1="380" x2="260" y2="420" stroke="#555" stroke-width="6"/>
+    <rect x="250" y="415" width="20" height="10" fill="#212121" transform="rotate(20 260 420)"/>
+  </g>
+
+  <!-- Pelican -->
+  <g transform="translate(0, -20)">
+    <!-- Right Leg -->
+    <path d="M220 280 Q240 330 260 415" fill="none" stroke="#FF9800" stroke-width="10" stroke-linecap="round"/>
+    <!-- Webbed Foot -->
+    <path d="M260 415 L280 420 L265 425 Z" fill="#FF9800"/>
+
+    <!-- Body -->
+    <ellipse cx="200" cy="270" rx="60" ry="45" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+
+    <!-- Tail feathers -->
+    <path d="M140 270 L120 260 L120 280 Z" fill="#FFF"/>
+
+    <!-- Wing (Forward reaching) -->
+    <!-- Using a shape that mimics a wing stretching to the handlebars -->
+    <path d="M230 260 C280 260 320 240 350 210" fill="none" stroke="#FFF" stroke-width="25" stroke-linecap="round"/>
+    <!-- Wing tip "feathers" on bar -->
+    <path d="M350 210 L365 205 L360 215 Z" fill="#FFF"/>
+
+    <!-- Neck -->
+    <path d="M240 240 C270 230 270 180 260 150" fill="none" stroke="#FFF" stroke-width="22" stroke-linecap="round"/>
+
+    <!-- Head -->
+    <circle cx="260" cy="140" r="22" fill="#FFF"/>
+
+    <!-- Eye -->
+    <circle cx="260" cy="135" r="3" fill="#000"/>
+
+    <!-- Beak (Long and distinctive) -->
+    <path d="M275 130 L360 130 L355 150 Q300 170 270 150 Z" fill="#FFB74D" stroke="#EF6C00" stroke-width="1"/>
+    <line x1="275" y1="140" x2="358" y2="140" stroke="#EF6C00" stroke-width="1"/>
+
+    <!-- Beak Tip -->
+    <path d="M360 130 L365 135 L360 140 Z" fill="#EF6C00"/>
+
+    <!-- Wing detail (folded on side) -->
+    <path d="M180 260 Q220 260 240 280" fill="none" stroke="#EEE" stroke-width="2"/>
+
+  </g>
+</svg>
